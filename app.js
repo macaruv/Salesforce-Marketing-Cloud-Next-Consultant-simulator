@@ -2128,7 +2128,7 @@ const QUESTIONS = [
     explanation: "Unified Engagement History Dashboards (powered by Data360 and Tableau Next) give sales and marketing teams visibility into engagement activities across account stakeholders. The component can be embedded directly onto Account, Lead, and Contact page layouts in CRM."
   },
   // ============================================================
-  // Category: GENERAL
+  // SECTION: PRACTICE EXAMN - EASY
   // ============================================================
   {
     id: 166,
@@ -2470,7 +2470,7 @@ const QUESTIONS = [
   },
   {
     id: 192,
-    category: CATEGORIES.FLOWS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company wants to evaluate customers immediately after web behavior occurs and then start a Marketing Cloud Next flow. Which combination is most appropriate?",
     choices: [
       "Dynamic Segment + Broadcast Flow",
@@ -2535,7 +2535,7 @@ const QUESTIONS = [
   },
   {
     id: 197,
-    category: CATEGORIES.FLOWS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company wants to run the following three flows as part of a single marketing initiative:\n- Welcome Flow for new customers\n- Follow-up Flow for purchasers\n- Reminder Flow for non-purchasers\nCan these flows be managed under a single campaign?",
     choices: [
       "No. A campaign can be associated with only one flow",
@@ -2548,7 +2548,7 @@ const QUESTIONS = [
   },
   {
     id: 198,
-    category: CATEGORIES.FLOWS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A marketer changes the conditions of a segment associated with a campaign. However, when the marketer checks the segment preview on the campaign record, the previous audience is still displayed. What is the most appropriate action?",
     choices: [
       "Delete and recreate the campaign",
@@ -2561,7 +2561,7 @@ const QUESTIONS = [
   },
   {
     id: 199,
-    category: CATEGORIES.FLOWS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company wants to send a Welcome email when a customer submits a registration form. Which flow type is most appropriate?",
     choices: [
       "Activation-Triggered Flow",
@@ -2574,7 +2574,7 @@ const QUESTIONS = [
   },
   {
     id: 200,
-    category: CATEGORIES.FLOWS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company wants to pass a postal code through an API, use that value to determine the audience of a Dynamic Segment, and send a promotional email. The company also wants segment membership to be evaluated after the flow starts. Which flow type is most appropriate?",
     choices: [
       "Audience Flow",
@@ -2587,7 +2587,7 @@ const QUESTIONS = [
   },
   {
     id: 201,
-    category: CATEGORIES.FLOWS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company wants an external system to invoke a Marketing Cloud Next flow immediately after a customer purchases a product and send an order confirmation email. The external system must also pass the order ID and purchase amount to the flow. Which flow type is most appropriate?",
     choices: [
       "Audience Flow",
@@ -2600,7 +2600,7 @@ const QUESTIONS = [
   },
   {
     id: 202,
-    category: CATEGORIES.FLOWS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company has associated Flow X with Campaign A. Flow X has Version 1 and Version 2, and Version 2 is the most recently activated version. Flow X inherits the sharing settings of Campaign A. An administrator then deletes Campaign A. Flow X doesn’t have any sharing rules of its own. What happens to Flow X?",
     choices: [
       "Flow X and all of its versions are deleted together with Campaign A",
@@ -2613,7 +2613,7 @@ const QUESTIONS = [
   },
   {
     id: 203,
-    category: CATEGORIES.FLOWS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A marketer wants to randomly assign customers to multiple customer journey paths and have the system automatically determine which path delivers the best results. When the system automatically selects a winner in Path Experiment, which mechanism is used?",
     choices: [
       "Linear Regression with a 90% confidence threshold",
@@ -2626,7 +2626,7 @@ const QUESTIONS = [
   },
   {
     id: 204,
-    category: CATEGORIES.FLOWS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A marketer configures a Path Experiment to randomly assign customers 50% to Path A and 50% to Path B. Of the 6 customers in the audience, 4 are assigned to Path A and 2 are assigned to Path B. Is this expected behavior?",
     choices: [
       "No. Exactly 3 customers must be assigned to each path",
@@ -2652,7 +2652,7 @@ const QUESTIONS = [
   },
   {
     id: 206,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company is using an image created in Team A’s Marketing Workspace in Team B’s Marketing Workspace. Team B’s Workspace is also shared with Team C’s Workspace. The team assumes that Team A’s image will automatically become available to Team C through Team B. Which statement is correct?",
     choices: [
       "If the sharing relationship is A → B → C, content from A automatically becomes available in C",
@@ -2665,7 +2665,7 @@ const QUESTIONS = [
   },
   {
     id: 207,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company has configured a default brand for its Marketing Workspace. However, for a specific product campaign, the company wants to use a different brand design from the default. How can this be handled in Marketing Cloud Next?",
     choices: [
       "It can’t be done because the default brand for a Workspace can’t be changed",
@@ -2691,7 +2691,7 @@ const QUESTIONS = [
   },
   {
     id: 209,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "An email contains multiple content variations based on customer attributes. A customer meets the conditions for both the “Gold Member” variation and the “Tokyo Resident” variation. Which content is displayed?",
     choices: [
       "Both variations are displayed at the same time",
@@ -2704,7 +2704,7 @@ const QUESTIONS = [
   },
   {
     id: 210,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A retail company wants to display up to five recently viewed products for each customer in an email. Each product should display an image, product name, and price. Which feature is most appropriate?",
     choices: [
       "Path Experiment",
@@ -2717,7 +2717,7 @@ const QUESTIONS = [
   },
   {
     id: 211,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company starts a flow when a customer completes an order and wants to display the order number and purchase amount included in that order event in the email body. Which Data Source is most appropriate?",
     choices: [
       "Unified Individual",
@@ -2730,7 +2730,7 @@ const QUESTIONS = [
   },
   {
     id: 212,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company runs a flow immediately after a customer completes an order and sends an order confirmation email. The email must display an estimated delivery date retrieved from an external shipping system. This value isn’t included in the order event that started the flow. The estimated delivery date is retrieved during flow execution using an HTTP Connector. Which Data Source is most appropriate for passing this value to the email?",
     choices: [
       "Event",
@@ -2743,7 +2743,7 @@ const QUESTIONS = [
   },
   {
     id: 213,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A marketer wants to use Preview & Test for a completed email but can’t select a recipient for the preview. What is the most appropriate action?",
     choices: [
       "Change the Data Graph to Real-Time",
@@ -2756,7 +2756,7 @@ const QUESTIONS = [
   },
   {
     id: 214,
-    category: CATEGORIES.CAMPAIGNS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A marketer is reviewing upcoming activities in Marketing Calendar. The marketer wants to drag and drop both campaign dates and Segment Flow send dates directly on the calendar. Which statement is correct?",
     choices: [
       "Both campaign dates and Segment Flow send dates can be changed by dragging",
@@ -2909,7 +2909,793 @@ const QUESTIONS = [
     ],
     correctAnswerText: "Campaign C",
     explanation: "The Last Touch model in Opportunity Influence gives 100% of the credit to the last campaign the person engaged with before the Opportunity was closed.\nIn this scenario, the engagement sequence is:\n1. Campaign A: 20 days before Opportunity creation\n2. Campaign B: 5 days after Opportunity creation\n3. Campaign C: 2 days before the Opportunity was closed\nCampaign C represents the final eligible engagement before the Opportunity became Closed Won, so Campaign C receives 100% of the credit.\nAlso remember these important Opportunity Influence requirements:\n- Only Closed Won Opportunities are included\n- The person who clicked must be registered as a Contact Role on the Opportunity\n- It uses Email and SMS click engagement associated with person records, not Data 360 Unified Profile data\n- Eligible clicks occur from 30 days before Opportunity creation through Closed Won\n- First Touch gives 100% credit to the first eligible engagement\n- Last Touch gives 100% credit to the last eligible engagement\n\nAdditional Technical Context: (A) is incorrect because Campaign A would receive 100% credit under the First Touch model (the initial touchpoint occurring within the 30-day pre-creation window). (B) is incorrect because Campaign B is an intermediate interaction and neither the first nor terminal touchpoint before closure. (D) is incorrect because an equal split represents the Even Distribution / Linear attribution model, not the single-touch Last Touch model."
+  },
+// ============================================================
+// SECTION: Practice Examn - INTERMEDIATE
+// ============================================================
+  {
+    id: 226,
+    category: CATEGORIES.PLATFORM,
+    question: "A company is planning to implement Marketing Cloud Next. During the discovery session, the consultant learns the following:\n- The company currently uses Marketing Cloud Engagement.\n- The company operates multiple brands and wants to separate data and marketing activities by brand.\n- In the future, the company wants to unify customer data from multiple systems.\n- However, during the initial phase, the company wants to minimize implementation risk and demonstrate value quickly.\nWhich approach should the consultant recommend?",
+    choices: [
+      "Discontinue the existing Marketing Cloud Engagement implementation and migrate all brands and use cases to Marketing Cloud Next at the same time.",
+      "Start with a high-priority use case where results can be measured easily, and then gradually expand while considering future data unification and brand separation.",
+      "Create Business Units for all brands before finalizing the business requirements.",
+      "First unify all customer data in Data 360 and wait until the process is complete before starting any marketing activities."
+    ],
+    correctAnswerText: "Start with a high-priority use case where results can be measured easily, and then gradually expand while considering future data unification and brand separation.",
+    explanation: "When implementing Marketing Cloud Next, the first step is to conduct discovery and understand the business goals, existing environment, data, channels, consent requirements, and organizational structure before translating those requirements into a specific solution design.\nFor this company, future considerations include:\n- Multiple brands → Business Units / Data Spaces\n- Customer unification across multiple systems → Data 360 / Identity Resolution\n- Existing Marketing Cloud Engagement → Phased implementation while leveraging the existing environment\nHowever, there is no need to implement everything from the beginning.\nStarting with a Quick Win / Pilot Use Case and gradually expanding after validating the results is also an important implementation strategy.\n\nAdditional Technical Context: (A) is incorrect because a \"big-bang\" rip-and-replace migration introduces excessive operational disruption and deployment risk while abandoning active, functioning Marketing Cloud Engagement infrastructure. (C) is incorrect because provisioning organizational hierarchy (Business Units and Data Spaces) prior to completing data governance and scoping requirements leads to rigid, misaligned tenant architectures. (D) is incorrect because pausing all execution until enterprise-wide identity resolution and ingestion are completed delays time-to-value; a crawled/phased implementation delivering high-priority journeys demonstrates ROI much earlier."
+  } ,
+  {
+    id: 227,
+    category: CATEGORIES.PLATFORM,
+    question: "An administrator is preparing to begin the initial setup of Marketing Cloud Next. The user currently has the System Administrator profile and only the Marketing Cloud Admin permission set. Data 360 has not yet been enabled. What should the consultant do first?",
+    choices: [
+      "Enable Data 360, and then assign the Data Cloud Architect permission set.",
+      "Assign the Data Cloud Architect permission set, and then begin the initial Marketing Cloud Next setup.",
+      "Replace Marketing Cloud Admin with Marketing Cloud Manager, and then enable Data 360.",
+      "Create the Salesforce CRM connector, and then assign the missing permission."
+    ],
+    correctAnswerText: "Assign the Data Cloud Architect permission set, and then begin the initial Marketing Cloud Next setup.",
+    explanation: "To begin setting up Marketing Cloud Next, the user needs the following three permissions:\n- System Administrator profile\n- Data Cloud Architect permission set\n- Marketing Cloud Admin permission set\nIn this scenario, the user is missing the Data Cloud Architect permission set.\nTherefore, the required permissions should be assigned before beginning the setup.\nThe overall initial setup process then follows this sequence:\nEnable Data 360 → Salesforce CRM Connector → Default Email Channel → Data Protection → Data Space\nThe key to this question is not to focus only on the fact that Data 360 has not yet been enabled. First, verify that the user meets the permission prerequisites required to perform the setup.\n\nAdditional Technical Context: (A) is incorrect because attempting to initialize and configure Data 360 provisioning without the Data Cloud Architect permission set will result in insufficient privileges errors during execution. (C) is incorrect because Marketing Cloud Admin is explicitly required for platform setup, whereas Marketing Cloud Manager is intended for day-to-day campaign and content orchestration. (D) is incorrect because creating connectors occurs inside the setup flow, which cannot be initiated without first satisfying the administrative permission prerequisites."
+  },
+  {
+    id: 228,
+    category: CATEGORIES.PLATFORM,
+    question: "A company is enabling Business Units in Marketing Cloud Next for the first time. Before Business Units are enabled, the following users already exist in the org:\n- User A: Has the Marketing Cloud Admin permission set\n- User B: Has the Marketing Cloud Manager permission set\n- User C: Has neither permission set\nWhat happens when Business Units are enabled for the first time?",
+    choices: [
+      "No existing users are added, and every user must be manually added as a member.",
+      "Only User A, who has Marketing Cloud Admin, is automatically added to the first Business Unit.",
+      "Users A and B, who have either Marketing Cloud Admin or Marketing Cloud Manager, are automatically added to the first Business Unit.",
+      "All existing users are automatically added to the first Business Unit, and unnecessary users must then be removed."
+    ],
+    correctAnswerText: "Users A and B, who have either Marketing Cloud Admin or Marketing Cloud Manager, are automatically added to the first Business Unit.",
+    explanation: "When Business Units are enabled for the first time in Marketing Cloud Next, existing users who have either of the following permission sets are automatically added as members of the first Business Unit:\n- Marketing Cloud Admin\n- Marketing Cloud Manager\nTherefore, in this scenario, Users A and B are automatically added, while User C, who has neither permission set, is not.\nBusiness Unit membership does not have to be configured entirely from scratch. When Business Units are first enabled, existing Marketing Cloud Admin and Marketing Cloud Manager users are carried over to the first Business Unit.\n\nAdditional Technical Context: (A) is incorrect because Salesforce automatically maps qualified baseline users to prevent lockout upon initial activation. (B) is incorrect because automatic membership is not restricted to Admins; users holding the Marketing Cloud Manager permission set are also auto-assigned. (D) is incorrect because general org users lacking Marketing Cloud functional permission sets (such as User C) are excluded from automatic Business Unit member enrollment."
+  },
+  {
+    id: 229,
+    category: CATEGORIES.PLATFORM,
+    question: "A company is enabling Business Units for the first time in Marketing Cloud Next Advanced Edition. Data 360 currently contains two Data Spaces. The company wants the following configuration:\n- Business Unit A → Data Space 1\n- Business Unit B → Data Space 2\nHowever, if the organization is restructured in the future, the company may want to change Business Unit A from Data Space 1 to Data Space 2. What should the consultant explain before the Business Units are created?",
+    choices: [
+      "At least three Data Spaces are required for initial activation, but they can be changed freely after the Business Units are created.",
+      "Business Units cannot be enabled with the current configuration, so one Data Space must be shared by both Business Units.",
+      "Business Units can be enabled with two Business Units and two Data Spaces, but the associated Data Space cannot be changed or deleted after the Business Unit is created.",
+      "Two Business Units can be created, but only the first Business Unit can use a Data Space."
+    ],
+    correctAnswerText: "Business Units can be enabled with two Business Units and two Data Spaces, but the associated Data Space cannot be changed or deleted after the Business Unit is created.",
+    explanation: "When enabling Business Units for the first time, two Business Units must be created.\nAlso:\nBusiness Unit ↔ Data Space = 1:1\nTherefore, at least two Data Spaces are required for two Business Units.\nBecause the company already has two Data Spaces, it meets the requirements for initial activation.\nHowever, the important consideration is what happens after the Business Units are created.\nThe associated Data Space and CMS workspace cannot be changed or deleted.\nTherefore, rather than assuming that these associations can be changed later, the company should carefully consider its organizational structure and data-separation strategy before creating the Business Units.\n\nAdditional Technical Context: (A) is incorrect because three Data Spaces are not required for activation (two suffice for two BUs), and Data Space associations are permanent and cannot be modified post-creation. (B) is incorrect because a Data Space cannot be shared across multiple BUs (strict 1:1 mapping is enforced). (D) is incorrect because every active Business Unit must be mapped to its own distinct Data Space."
+  },
+  {
+    id: 230,
+    category: CATEGORIES.PLATFORM,
+    question: "A company wants to add a sales representative as a member of Business Unit A. The sales representative has the following requirements:\n- Can send promotional messages\n- Can view performance dashboards\n- Cannot activate campaign flows\n- Can access content in the Marketing Workspace when necessary\nWhich configuration should the consultant recommend?",
+    choices: [
+      "Assign Marketer-Standard and remove access to the Marketing Workspace.",
+      "Assign Marketer-ReadOnly and, when necessary, assign the appropriate content role in the Marketing Workspace.",
+      "Assign Marketer-ReadOnly, which automatically provides access to the Marketing Workspace as a Content Manager.",
+      "Assign Marketing Cloud Admin and hide only campaign flows through sharing settings."
+    ],
+    correctAnswerText: "Assign Marketer-ReadOnly and, when necessary, assign the appropriate content role in the Marketing Workspace.",
+    explanation: "The Marketer-ReadOnly role allows a user to:\n- Send promotional messages (Distributed Marketing and Alerts)\n- View performance dashboards\n- Not activate campaign flows\nTherefore, this role is appropriate for the sales representative in this scenario.\nHowever, Marketer-ReadOnly users don’t have access to the Business Unit’s Marketing Workspace by default.\nIf access is required, add the user to the Marketing Workspace and assign the appropriate content role.\nMarketer-Standard, on the other hand, can activate campaign flows, so it provides more permissions than required in this scenario.\n\nAdditional Technical Context: (A) is incorrect because Marketer-Standard grants the ability to activate campaign flows, violating the principle of least privilege. (C) is incorrect because Marketer-ReadOnly does not grant default access to the CMS Marketing Workspace, let alone elevated Content Manager permissions. (D) is incorrect because Marketing Cloud Admin grants broad system configuration and management rights, and flow activation cannot simply be toggled off via standard sharing rules on the Admin permission set."
+  },
+  {
+    id: 231,
+    category: CATEGORIES.DATA,
+    question: "A company plans to separate an existing DLO for use by Business Unit A and Business Unit B. The administrator reviews the existing Data Space Filter and finds that multiple conditions are configured using AND logic. When Business Units are enabled, what is the correct behavior for the Business Unit filter on this DLO?",
+    choices: [
+      "A filter using BusinessUnitId is automatically added to the existing AND conditions.",
+      "A filter using DataSpaceId automatically replaces the existing conditions.",
+      "Because the existing filter uses AND conditions, the Business Unit filter is not automatically added.",
+      "The existing AND conditions are automatically converted to OR conditions, and then the Business Unit filter is added."
+    ],
+    correctAnswerText: "Because the existing filter uses AND conditions, the Business Unit filter is not automatically added.",
+    explanation: "To separate DLO data by Business Unit, a Data Space Filter can use either:\n- BusinessUnitId\n- DataSpaceId\nHowever, whether the Business Unit filter is automatically added depends on the existing filter configuration:\n- No existing filter → Automatically added\n- OR conditions → Automatically added\n- AND conditions → Not automatically added\nThis is because Data Space Filters don’t support combining AND and OR logic.\nThe key to this question is not whether BusinessUnitId or DataSpaceId should be used. The important detail is that the existing filter uses AND conditions.\n\nAdditional Technical Context: (A) and (D) are incorrect because Data Space Filters strictly enforce uniform Boolean evaluation per filter block and do not support mixed Boolean operators (AND + OR); the system will neither append a conflicting clause nor mutate existing business logic operators automatically. (B) is incorrect because enabling Business Units never overwrites or replaces pre-existing data space filtering definitions."
+  },
+  {
+    id: 232,
+    category: CATEGORIES.PLATFORM,
+    question: "A company wants to maintain consistent branding across emails and landing pages in Marketing Cloud Next. The company has the following requirements:\n- Use its own branded domain for URLs displayed when recipients click links in emails.\n- Use its own branded domain for the public URLs of Marketing Landing Pages.\nWhich combination should the consultant configure?",
+    choices: [
+      "Sending Domain + Verified From Address",
+      "Brand Tracking Domain + Custom Landing Page Domain",
+      "Reply Mail Management + Brand Tracking Domain",
+      "Verified From Address + Custom Landing Page Domain"
+    ],
+    correctAnswerText: "Brand Tracking Domain + Custom Landing Page Domain",
+    explanation: "In Marketing Cloud Next, each domain-related configuration serves a different purpose.\nFor the first requirement:\nUse the company’s branded domain for links in emails.\nUse a Brand Tracking Domain.\nFor the second requirement:\nUse the company’s branded domain for the public URL of Marketing Landing Pages.\nUse a Custom Landing Page Domain.\nThe differences can be summarized as follows:\n- Sending Domain → Domain used to send emails\n- Brand Tracking Domain → Domain used for tracked links in emails\n- Custom Landing Page Domain → Domain used for Marketing Landing Page public URLs\n- Verified From Address → Address used as the email sender\nThe key is to recognize that even though both requirements involve branded domains, the required configuration differs depending on whether the domain is used for email links or landing page URLs.\n\nAdditional Technical Context: (A) and (D) are incorrect because Sending Domain and Verified From Address govern email transport envelope authentication (SPF/DKIM/DMARC) and the sender display header, not link redirection wrapping or web hosting paths. (C) is incorrect because Reply Mail Management (RMM) automates inbound reply handling (auto-replies, unsubscribe keyword parsing), which plays no role in public landing page hosting."
+  },
+  {
+    id: 233,
+    category: CATEGORIES.PLATFORM,
+    question: "A company’s email sending volume from Marketing Cloud Next has increased significantly. The Sending IP Addresses page shows the following:\n- IP Management Type: Transition\n- IP Status of a newly assigned IP Address: In Progress\nThe administrator assumes that because a dedicated IP has been assigned, all emails are now being sent from dedicated IPs. Which explanation should the consultant provide?",
+    choices: [
+      "Correct. Transition means the migration to dedicated IPs is complete and all emails are being sent from dedicated IPs.",
+      "Incorrect. Transition means traffic is gradually moving from shared IPs to dedicated IPs, and In Progress indicates that the transition to that IP is still underway.",
+      "Incorrect. Transition means dedicated IPs are being reclaimed and traffic is moving back to shared IPs.",
+      "Correct. In Progress means IP provisioning is complete and the IP is already being used for all email traffic."
+    ],
+    correctAnswerText: "Incorrect. Transition means traffic is gradually moving from shared IPs to dedicated IPs, and In Progress indicates that the transition to that IP is still underway.",
+    explanation: "The key is not to confuse IP Management Type with IP Status.\nIP Management Type progresses as follows:\nGeneral → Transition → Dedicated\n- General → Email is sent from the shared IP pool.\n- Transition → Traffic is gradually moving from shared IPs to dedicated IPs.\n- Dedicated → The transition to dedicated IPs is complete.\nEven after dedicated IPs are assigned, all traffic doesn’t switch immediately. Salesforce gradually transitions the traffic over 30 days.\nFor an individual IP Address, In Progress indicates that traffic is still being transitioned from the shared IP pool to the newly assigned dedicated IP pool.\nActive indicates that provisioning is complete and the IP is being used for email sending.\nTherefore:\nTransition + In Progress = The transition to dedicated IPs is still underway.\n\nAdditional Technical Context: (A) is incorrect because full dedicated routing only occurs when the status flips to 'Dedicated', which happens after the ramp-up completes. (C) is incorrect because Transition represents forward progression into dedicated IPs, not an IP de-provisioning or reclamation phase. (D) is incorrect because 'In Progress' indicates that automated IP warming and traffic ramp allocation are actively taking place, not that 100% of volume has cut over."
+  },
+  {
+    id: 234,
+    category: CATEGORIES.CONSENT,
+    question: "A customer has the following consent status with the same company:\n- personal@example.com: OPT_IN for Newsletter\n- work@example.com: No consent record for Newsletter\n- SMS: OPT_IN for Sender Code A\nThe marketer assumes that because both email addresses are associated with the same Individual, the Newsletter can also be sent to work@example.com. What should the consultant explain?",
+    choices: [
+      "Because both email addresses belong to the same Individual, the consent for personal@example.com can be carried over to work@example.com.",
+      "Because the customer has opted in to SMS, the customer can also be treated as opted in to Email.",
+      "work@example.com requires explicit Email consent, and the SMS consent has no effect on the Email consent.",
+      "If either personal@example.com or work@example.com is OPT_IN, the Newsletter can be sent to both addresses."
+    ],
+    correctAnswerText: "work@example.com requires explicit Email consent, and the SMS consent has no effect on the Email consent.",
+    explanation: "Marketing Cloud Next consent management requires understanding two concepts together.\nFirst, consent is managed at the Contact Point level, not the Individual level.\nTherefore, even though personal@example.com is OPT_IN, that consent is not automatically carried over to work@example.com.\nSecond, consent is managed independently for each channel.\nAn OPT_IN for SMS therefore has no effect on Email consent.\nIn addition, promotional Email uses the Implicit Opt-Out model. Because work@example.com doesn’t have an explicit OPT_IN, promotional email can’t be sent to that address.\n\nAdditional Technical Context: (A) and (D) are incorrect because consent records in Data Cloud / Data 360 map strictly to Contact Point Email (CPE) DMO records, preventing cross-point consent inheritance across distinct email endpoints even under unified profiles. (B) is incorrect because channel consent is siloed: Contact Point Phone (CPP) subscription opt-in status provides zero legal or technical entitlement to dispatch across email channels."
+  },
+  {
+    id: 235,
+    category: CATEGORIES.CONSENT,
+    question: "A company is migrating Newsletter Email consent data from an existing system. Marketing Cloud Next already contains the following record:\n- Email: customer@example.com\n- Subscription: Newsletter\n- Status: OPT_IN\n- Consent Date: July 10, 2026\nThe source system contains these two records:\n- OPT_OUT: July 5, 2026\n- OPT_OUT: July 20, 2026\nWhen the administrator imports the data using a CSV file, what should happen?",
+    choices: [
+      "The July 5 OPT_OUT is processed first, so the final status becomes OPT_OUT.",
+      "Only the July 20 OPT_OUT can update the existing record.",
+      "Because OPT_IN and OPT_OUT are different statuses, both records can update the existing record.",
+      "Once a record is OPT_IN, it can’t be changed to OPT_OUT through a CSV import."
+    ],
+    correctAnswerText: "Only the July 20 OPT_OUT can update the existing record.",
+    explanation: "During a manual import, if a consent record already exists for the same Communication Subscription and Contact Point, it is updated only when the imported Consent Date is later than the currently registered Consent Date.\nThe current Consent Date is July 10.\nTherefore:\n- July 5 → Older than the current date → Ignored\n- July 20 → Newer than the current date → Updated\nThe key to this question is that the update is determined by the Consent Date, rather than simply by whether the status is OPT_IN or OPT_OUT.\n\nAdditional Technical Context: (A) is incorrect because ingestion pipelines enforce chronological validation; an inbound record with a timestamp earlier than the existing record's Consent Date is rejected/ignored as stale data. (C) is incorrect because status divergence does not override the timestamp precedence rule. (D) is incorrect because consent states are fully mutable via CSV or API ingestion provided the update satisfies the later timestamp condition."
+  },
+  {
+    id: 236,
+    category: CATEGORIES.CONSENT,
+    question: "A company allows customers to update their subscription preferences through a Service Cloud self-service interface. A customer opted out of the Newsletter in Service Cloud, but the change wasn’t immediately reflected in Marketing Cloud Next, and emails continued to be sent. Which design is most appropriate to prevent this issue?",
+    choices: [
+      "Manage consent separately in Service Cloud and Marketing Cloud Next.",
+      "Use Data 360 as the Single Source of Truth for consent and reflect changes made in Service Cloud through flows or similar automation.",
+      "Use only the Email Opt Out checkbox in CRM as the source of truth for consent management.",
+      "Allow consent changes only through the Marketing Cloud Next Preference Center."
+    ],
+    correctAnswerText: "Use Data 360 as the Single Source of Truth for consent and reflect changes made in Service Cloud through flows or similar automation.",
+    explanation: "Managing consent separately across multiple systems can easily lead to inconsistent consent states.\nSalesforce recommends using Data 360 as the Single Source of Truth for consent management.\nWhen consent is changed in another system, such as Service Cloud, the change should be promptly reflected in Data 360 / Marketing Cloud Next through flows or similar automation.\nThis helps prevent compliance issues caused by siloed consent states, such as:\nService Cloud → Opted Out\nMarketing Cloud Next → Still Opted In\n\nAdditional Technical Context: (A) is incorrect because maintaining disconnected, siloed preference architectures directly creates race conditions and legal compliance breaches when customer preference updates fail to sync across applications. (C) is incorrect because legacy CRM boolean flags (such as HasOptedOutOfEmail) fail to model granular communication subscriptions, channels, or contact points managed within the standard Data Cloud consent data model. (D) is incorrect because forcing customers to use only one specific channel-facing preference center ignores valid omnichannel intake touchpoints (like service agents and customer portals)."
+  },
+  {
+    id: 237,
+    category: CATEGORIES.CONSENT,
+    question: "An administrator wants to use Salesforce Flow to automate consent updates. The requirements are:\n- Create consent based on a data change in Data 360.\n- Process a consent request triggered by a customer event.\nWhich combination of actions is correct?",
+    choices: [
+      "Data Cloud-triggered flow → Consent Request / Event-triggered flow → Create Consent",
+      "Data Cloud-triggered flow → Create Consent / Event-triggered flow → Consent Request",
+      "Create Consent for both flow types",
+      "Consent Request for both flow types"
+    ],
+    correctAnswerText: "Data Cloud-triggered flow → Create Consent / Event-triggered flow → Consent Request",
+    explanation: "The supported flow types for consent management include:\n- Data Cloud-triggered flows\n- Event-triggered flows\n- Autolaunched flows\nThe potentially confusing part is which action each flow uses:\n- Data Cloud-triggered flow → Create Consent\n- Event-triggered flow → Consent Request\n- Autolaunched flow → Consent Request\nAlso remember that record-triggered flows aren’t supported for consent management.\n\nAdditional Technical Context: (A), (C), and (D) are incorrect because the Flow action architecture dictates specific invocable actions per trigger context: Data Cloud-triggered flows operate on Data Model Object (DMO) record changes using the 'Create Consent' action to persist verified states directly, whereas streaming Event-triggered flows and Autolaunched flows process real-time customer event signals through the 'Consent Request' intake action. Standard Record-Triggered flows are not supported for MCN consent pipelines."
+  },
+  {
+    id: 238,
+    category: CATEGORIES.CONSENT,
+    question: "A company uses Email, SMS, and WhatsApp. A customer has the following consent statuses:\n- Promotional Email: OPT_IN\n- SMS Sender Code A: OPT_OUT\n- SMS Sender Code B: OPT_IN\n- WhatsApp: OPT_IN\nWhich messages can be sent to this customer?",
+    choices: [
+      "Email only",
+      "Email, SMS from Sender Code B, and WhatsApp",
+      "Because the customer has opted out of one SMS Sender Code, all SMS and WhatsApp messages are blocked.",
+      "Because the customer has opted out of one channel, messages can’t be sent through any channel."
+    ],
+    correctAnswerText: "Email, SMS from Sender Code B, and WhatsApp",
+    explanation: "In Marketing Cloud Next, consent is managed independently for each channel.\nIn addition, unlike other channels, SMS consent is managed at the Sender Code level.\nTherefore:\n- Email → OPT_IN → Can send\n- SMS Sender Code A → OPT_OUT → Can’t send\n- SMS Sender Code B → OPT_IN → Can send\n- WhatsApp → OPT_IN → Can send\nOpting out of Sender Code A doesn’t affect Sender Code B, Email, or WhatsApp.\n\nAdditional Technical Context: (A), (C), and (D) are incorrect because channel and sender-code independence is a foundational tenet of the Data Cloud consent model. Contact Point Consent records are keyed by specific channel identifiers; opt-outs are strictly isolated and never cascade across distinct communication channels (e.g., Email or WhatsApp) or across distinct SMS short codes / sender codes."
+  },
+  {
+    id: 239,
+    category: CATEGORIES.CONSENT,
+    question: "A customer uses One-Click Unsubscribe in a promotional Newsletter email. The customer is also subscribed to Product Updates. Later, the customer explicitly opts in to the Newsletter again. Which statement correctly describes this behavior?",
+    choices: [
+      "One-Click Unsubscribe permanently opts the customer out of all Communication Subscriptions.",
+      "Only the Newsletter is opted out, Product Updates remains subscribed, and the customer can opt in to the Newsletter again later.",
+      "Both Newsletter and Product Updates are opted out, and the customer can’t opt in again.",
+      "One-Click Unsubscribe deletes the Contact Point, so the customer needs a new email address to opt in again."
+    ],
+    correctAnswerText: "Only the Newsletter is opted out, Product Updates remains subscribed, and the customer can opt in to the Newsletter again later.",
+    explanation: "One-Click Unsubscribe opts the customer out only of the Communication Subscription used for that email.\nTherefore, unsubscribing from a Newsletter email doesn’t affect the Product Updates subscription.\nAn opt-out is also not permanent.\nIf the customer later explicitly opts in again, they can once again become eligible to receive the Newsletter.\nThe same basic concept applies to Unsubscribe All in the Preference Center. It unsubscribes the customer from their current subscriptions, but it doesn’t permanently prevent them from opting in again in the future.\n\nAdditional Technical Context: (A) and (C) are incorrect because One-Click Unsubscribe (RFC 8058 list-unsubscribe header mechanism) targets the specific Communication Subscription linked to the outbound message context, rather than applying a global, irreversible suppression lock. (D) is incorrect because an unsubscribe action updates the status of the related Contact Point Consent record to Opt-Out; it never deletes the underlying Contact Point Email (CPE) DMO or individual entity record."
+  },
+  {
+    id: 240,
+    category: CATEGORIES.CONSENT,
+    question: "A company wants to implement a more reliable method of obtaining Email consent to reduce incorrect email addresses and fraudulent registrations by third parties. A marketer proposes confirming OPT_IN immediately when the registration form is submitted. Which approach best follows Salesforce recommendations?",
+    choices: [
+      "Automatically set the customer to OPT_IN when the form is submitted without sending a confirmation email.",
+      "Send a transactional email after the form is submitted and confirm the OPT_IN when the customer clicks the link in the email.",
+      "Preselect the consent checkbox on the registration form.",
+      "Use SMS instead of Email for confirmation so that explicit consent isn’t required."
+    ],
+    correctAnswerText: "Send a transactional email after the form is submitted and confirm the OPT_IN when the customer clicks the link in the email.",
+    explanation: "A recommended approach for obtaining more reliable consent is Double Opt-In.\nThe process is:\nRegistration Form → Transactional Confirmation Email → Click Confirmation Link → Confirm OPT_IN\nThis helps reduce issues such as:\n- Incorrectly entered email addresses\n- Fraudulent registrations by third parties\nThe confirmation message is sent as a transactional email so that it can be delivered before the customer’s promotional subscription has been confirmed.\n\nAdditional Technical Context: (A) describes a single opt-in model, which fails to protect against typosquatting, invalid syntax, or malicious third-party form submissions. (C) is incorrect because pre-ticked checkboxes violate regulatory compliance standards (such as GDPR) and do not verify inbox ownership. (D) is incorrect because outbound SMS messaging carries stringent independent regulatory opt-in requirements (e.g., TCPA/CTIA guidelines) and cannot bypass explicit email verification."
+  },
+  {
+    id: 241,
+    category: CATEGORIES.CONSENT,
+    question: "A company uses web tracking on Marketing Landing Pages and multiple external websites. The marketer updated the consent banner for Marketing Landing Pages in Content Builder, but the previously published pages still display the old banner. The company also wants to use different consent banner designs for External Website A and External Website B. Which explanation should the consultant provide?",
+    choices: [
+      "Changes to the consent banner on Marketing Landing Pages are reflected immediately, and all external websites must use the same banner.",
+      "After changing the consent banner for Marketing Landing Pages, the site must be republished in Experience Cloud, and different consent banners can be used for different external websites.",
+      "Consent banners can’t be changed for Marketing Landing Pages and can only be changed for external websites.",
+      "If different consent banners are used for external websites, anonymous IDs can’t be used for web tracking."
+    ],
+    correctAnswerText: "After changing the consent banner for Marketing Landing Pages, the site must be republished in Experience Cloud, and different consent banners can be used for different external websites.",
+    explanation: "When you change the consent banner for Marketing Landing Pages, making the change in Content Builder alone isn’t enough.\nYou must republish the Marketing Landing Pages site in Experience Cloud.\nMarketing Landing Pages use a common consent banner, while different consent banners can be used for individual external websites.\nWeb tracking activities such as:\n- Page views\n- Form submissions\n- Link clicks\n- Button clicks\nare stored against an anonymous ID, rather than a name or email address.\nThe process of associating anonymous behavioral data with a known person, such as a Lead or Contact, is called Identity Stitching.\n\nAdditional Technical Context: (A) is incorrect because Experience Cloud site containers cache compiled runtime markup and require an explicit republish to propagate modified banner settings to public endpoints; additionally, external sites use distinct tracking script snippets and can deploy customized banners per site. (C) is incorrect because Marketing Landing Page consent banners are fully customizable through setup. (D) is incorrect because anonymous cookie/device identifiers are standard for web SDK data capture regardless of differences in banner styling or configuration across external properties."
+  },
+  {
+    id: 242,
+    category: CATEGORIES.DATA,
+    question: "A company wants to use a “Loyalty Tier” stored on a CRM Contact to personalize emails in Marketing Cloud Next. The data has been successfully ingested through a Data Stream, and the administrator confirms that the field exists in the DLO. However, the Loyalty Tier isn’t available when creating the email. What should the consultant check next?",
+    choices: [
+      "Reimport the DLO records using a CSV file.",
+      "Verify that the field is mapped to a DMO and that the required relationships and Data Graph are configured.",
+      "Add Loyalty Tier as a matching criterion in the Identity Resolution ruleset.",
+      "Convert Loyalty Tier into a Calculated Insight."
+    ],
+    correctAnswerText: "Verify that the field is mapped to a DMO and that the required relationships and Data Graph are configured.",
+    explanation: "The fact that data exists in a DLO in Data 360 doesn’t necessarily mean that the data is available for use in Marketing Cloud Next.\nIn general, check the data flow:\nData Source → Data Stream → DLO → DMO → Relationship → Data Graph → Marketing Cloud Next\nTo use related data in email personalization, verify that the field is correctly mapped to a DMO, that the DMO is connected through the required relationships, and that the data is available through the Data Graph.\n\nAdditional Technical Context: (A) is incorrect because reimporting data into the Data Lake Object (DLO) does not resolve schema mapping or data consumption dependencies downstream. (C) is incorrect because Identity Resolution match rules are designed to unify duplicate individual records across identity match keys (e.g., party identification, email, phone), not expose descriptive profile attributes for template authoring. (D) is incorrect because Calculated Insights are analytical rollups and aggregations (such as Lifetime Value or Recency scores), whereas a static categorical attribute like Loyalty Tier simply needs direct DMO mapping and Data Graph inclusion."
+  },
+  {
+    id: 243,
+    category: CATEGORIES.DATA,
+    question: "A company uses Identity Resolution to unify customer data from its CRM and loyalty system. For the same person, the CRM contains an address of “Tokyo,” while the loyalty system contains an address of “Osaka.” The company wants the CRM address to always be used in the Unified Profile, regardless of which record was updated most recently. Which reconciliation rule is most appropriate?",
+    choices: [
+      "Most Recent",
+      "Most Frequent",
+      "Source Priority",
+      "Normalized Email"
+    ],
+    correctAnswerText: "Source Priority",
+    explanation: "An Identity Resolution match rule determines which records should be considered the same person.\nA reconciliation rule, on the other hand, determines which value should be selected as the representative value when multiple values exist after records are unified.\nIn this scenario, the requirement is to always prioritize the CRM value, so Source Priority is the appropriate choice.\nCommon reconciliation methods include:\n- Most Recent → Uses the most recently updated value\n- Most Frequent → Uses the value that occurs most frequently\n- Source Priority → Prioritizes the specified data source\n\nAdditional Technical Context: (A) is incorrect because Most Recent evaluates row-level timestamps (LastModifiedDate) and would overwrite CRM data whenever the loyalty system updates later. (B) is incorrect because Most Frequent selects values based on count across source inputs, which does not guarantee CRM preference when ties or single instances occur. (D) is incorrect because Normalized Email is a matching rule transformation function used to pair identity candidate records, not a reconciliation rule for selecting unified attribute values."
+  },
+  {
+    id: 244,
+    category: CATEGORIES.DATA,
+    question: "A company wants Identity Resolution to unify two customer records only when both the email address and phone number match. How should the match rule be configured?",
+    choices: [
+      "Add email address and phone number as separate rules within the same ruleset.",
+      "Add both email address and phone number as criteria within a single rule.",
+      "Configure email address as a match rule and phone number as a reconciliation rule.",
+      "Create two rulesets, one for email address and another for phone number."
+    ],
+    correctAnswerText: "Add both email address and phone number as criteria within a single rule.",
+    explanation: "In Identity Resolution, multiple criteria within a single rule are evaluated using AND logic.\nTherefore, if records should be unified only when:\nEmail matches AND Phone matches\nboth criteria must be configured within the same rule.\nBy contrast, multiple rules within a ruleset are evaluated using OR logic.\nRemember the difference:\n- More criteria within one rule → AND → More restrictive matching\n- More rules within a ruleset → OR → Broader matching\n\nAdditional Technical Context: (A) is incorrect because separate rules within the same ruleset evaluate with OR logic, unifying records if either email OR phone matches. (C) is incorrect because reconciliation rules determine attribute value selection on unified records, not candidate matching criteria. (D) is incorrect because multiple rulesets run independently and cannot enforce compound Boolean AND conditions across disparate ruleset jobs."
+  },
+  {
+    id: 245,
+    category: CATEGORIES.DATA,
+    question: "A company wants to use a membership number to unify customers between its CRM and an external loyalty system through Identity Resolution. Both systems contain the same Identification Number, “123456,” but the values for Party Identification Type and Identification Name are different. What happens in this scenario?",
+    choices: [
+      "The records are unified because the Identification Number matches.",
+      "The records are unified as long as Party Identification Type matches.",
+      "The records aren’t unified because Type, Name, and Number don’t all match.",
+      "Identification Name is automatically reconciled using a reconciliation rule."
+    ],
+    correctAnswerText: "The records aren’t unified because Type, Name, and Number don’t all match.",
+    explanation: "When using a custom identifier other than an email address or phone number for Identity Resolution, you can use the Party Identification DMO.\nHowever, matching requires all of the following to match:\n- Party Identification Type\n- Identification Name\n- Identification Number\nTherefore, even if both systems contain the same Identification Number, “123456,” the records aren’t considered a match if the Type or Name values are different.\n\nAdditional Technical Context: (A) and (B) are incorrect because Identity Resolution strictly enforces exact-composite tripartite matching on the Party Identification DMO to prevent false-positive unifications (for example, a driver's license number matching a loyalty membership number with the same raw string). (D) is incorrect because reconciliation rules resolve conflicting attribute values across unified profiles post-match, whereas Party Identification matching rules govern the upstream identification and linking of duplicate records."
+  },
+  {
+    id: 246,
+    category: CATEGORIES.DATA,
+    question: "A company wants to create a segment of customers who have purchased a yellow product and have also purchased shoes. The yellow product and the shoes don’t need to be part of the same purchase record. When using related attributes, which configuration is most appropriate?",
+    choices: [
+      "Place “Color = Yellow” and “Product = Shoes” in the same container.",
+      "Place “Color = Yellow” and “Product = Shoes” in separate containers and connect them with AND logic.",
+      "Place “Color = Yellow” and “Product = Shoes” in separate containers and connect them with OR logic.",
+      "A Calculated Insight must be created to define this condition."
+    ],
+    correctAnswerText: "Place “Color = Yellow” and “Product = Shoes” in separate containers and connect them with AND logic.",
+    explanation: "With related attributes, the meaning changes depending on whether conditions are placed in the same container or separate containers.\nIf the following conditions are placed in the same container:\n- Color = Yellow\n- Product = Shoes\nthe same purchase record must satisfy both conditions. In other words, the customer must have purchased yellow shoes.\nIn this scenario, the requirement is:\n- The customer has purchased a yellow product\n- AND\n- The customer has purchased shoes\nThese can be separate purchase records.\nTherefore, the conditions should be placed in separate containers and connected with AND logic.\n\nAdditional Technical Context: (A) is incorrect because placing criteria inside the same container restricts the query to a single related record instance (e.g., an individual line item or single receipt that is both yellow AND shoes). (C) is incorrect because connecting separate containers with OR logic would include customers who bought a yellow shirt even if they never purchased shoes. (D) is incorrect because native Segment Builder multi-container logic natively handles independent related-record querying without requiring custom SQL aggregations."
+  },{
+    id: 247,
+    category: CATEGORIES.DATA,
+    question: "A company wants to assign customers to three segments in the following priority order:\n1. VIP\n2. Existing Customer\n3. Prospect\nEven if a customer meets the criteria for multiple segments, the customer must belong only to the highest-priority group, with no overlap between the segments. Which feature is most appropriate?",
+    choices: [
+      "Dynamic Segment",
+      "Waterfall Segment",
+      "Rapid Publish",
+      "Calculated Insight"
+    ],
+    correctAnswerText: "Waterfall Segment",
+    explanation: "A Waterfall Segment allows you to define a priority order across multiple segment lists and assign customers from the highest priority downward.\nOnce a customer is assigned to a higher-priority segment, that customer is excluded from lower-priority segments.\nWaterfall Segment is appropriate when:\n- Multiple segments exist\n- Customers may qualify for more than one segment\n- A priority order is required\n- Each customer should ultimately belong to only one segment\n\nAdditional Technical Context: (A) is incorrect because standard Dynamic Segments evaluate qualifying membership independently, resulting in audience overlaps across distinct campaigns. (C) is incorrect because Rapid Publish controls segment refresh cadence (every 1 or 4 hours on rolling 7-day data), not audience de-duplication hierarchy. (D) is incorrect because Calculated Insights compute multidimensional analytical rollups and metrics (such as CLV or RFM scores), rather than managing mutually exclusive segment split hierarchies."
+  },
+  {
+    id: 248,
+    category: CATEGORIES.DATA,
+    question: "A company is running a limited-time campaign based on customer behavior from the last several days. The standard segment refresh frequency of every 12 or 24 hours is too slow, so the company wants to refresh the audience more frequently. The consultant also explains that this approach can have an impact on usage and cost. Which publishing method is most appropriate?",
+    choices: [
+      "Don’t Refresh",
+      "Standard Publish",
+      "Rapid Publish",
+      "Always convert the segment to a Dynamic Segment"
+    ],
+    correctAnswerText: "Rapid Publish",
+    explanation: "Rapid Publish is appropriate for time-sensitive campaigns and automations that require more frequent segment refreshes than Standard Publish.\nStandard Publish supports refresh intervals of 12 or 24 hours.\nRapid Publish uses data from the most recent 7 days and can refresh every 1 or 4 hours.\nHowever, because it processes segments more frequently, you should also consider its impact on usage and cost.\n\nAdditional Technical Context: (A) is incorrect because 'Don't Refresh' turns the audience into a frozen static snapshot that never updates automatically. (B) is incorrect because Standard Publish intervals (12 or 24 hours) fail to satisfy the requirement for low-latency refresh on recent activity. (D) is incorrect because 'Dynamic Segment' is the generic umbrella term for batch segments that re-evaluate members on schedules, not a distinct publish acceleration schedule mechanism."
+  },
+  {
+    id: 249,
+    category: CATEGORIES.DATA,
+    question: "A company receives a CSV file containing new prospects collected at a trade show. The marketer wants to email this list on the same day and doesn’t want to wait for the standard Data 360 ingestion, Identity Resolution, and related processing to complete. Which approach is most appropriate?",
+    choices: [
+      "Import the CSV into a Marketing Object and create a standard segment.",
+      "Import the leads from the CSV into an Actionable List and use it as the target audience.",
+      "Upload the CSV directly to a DLO and create a real-time segment.",
+      "Import the CSV into a Calculated Insight and use it from a broadcast flow."
+    ],
+    correctAnswerText: "Import the leads from the CSV into an Actionable List and use it as the target audience.",
+    explanation: "An Actionable List allows you to manage a known audience as a static list and quickly use it for marketing activities.\nAn especially important capability is that you can import leads from a CSV file and begin sending without waiting for the standard Data 360 processing flow.\nThis makes Actionable Lists suitable for ad hoc scenarios such as:\nTrade show list → Receive CSV → Send email immediately\nHowever, note that Actionable Lists handle Data Graphs differently from standard audiences.\n\nAdditional Technical Context: (A) is incorrect because standard segmentation relies on the downstream Data 360 processing pipeline (DLO ingestion, DMO mapping, identity resolution, and batch schedule runs), introducing processing lag that prevents immediate same-day execution. (C) is incorrect because uploading to a DLO does not instantly feed real-time segments, which require streaming ingestion and real-time data graphs. (D) is incorrect because Calculated Insights are analytical SQL metric rollups, not file-based audience ingestion endpoints."
+  },
+  {
+    id: 250,
+    category: CATEGORIES.DATA,
+    question: "A company uses Identity Resolution to unify CRM Contacts and Leads. After the implementation goes live, a custom Contact field called “Customer Rank” is updated. The field has been ingested into the DLO, but it isn’t mapped to a DMO. The administrator assumes that the next Identity Resolution run will detect this change and reprocess the affected record. Which explanation is correct?",
+    choices: [
+      "If a DLO field changes, the record is reprocessed regardless of whether the field is mapped to a DMO.",
+      "All Contact field changes are recorded in SystemModStamp, so the record is always reprocessed.",
+      "A change only to a field that isn’t mapped to a DMO isn’t detected as a change for Identity Resolution processing.",
+      "Identity Resolution always performs a full refresh, so the field mapping status doesn’t matter."
+    ],
+    correctAnswerText: "A change only to a field that isn’t mapped to a DMO isn’t detected as a change for Identity Resolution processing.",
+    explanation: "Identity Resolution doesn’t process every source profile on every run.\nIt normally uses incremental processing to process records that have changed.\nAn important point is that, for DLO change detection in Identity Resolution, only fields mapped to a DMO are considered.\nTherefore, even if “Customer Rank” exists in the DLO, if that field isn’t mapped to a DMO, changing only that field doesn’t trigger Identity Resolution reprocessing based on that change.\nFor the exam, don’t treat the following as equivalent:\n- The field exists in the DLO\n- The field is mapped to the DMO\n- The field is considered for Identity Resolution change detection\n\nAdditional Technical Context: (A) and (B) are incorrect because Identity Resolution CDC (Change Data Capture) / incremental delta listeners evaluate changes exclusively at the semantic DMO layer; modifications restricted strictly to unmapped DLO columns or core platform SystemModStamps that do not project to mapped DMO fields are filtered out and do not trigger delta unification jobs. (D) is incorrect because Identity Resolution defaults to cost-effective incremental daily runs rather than triggering exhaustive full re-clustering refreshes on every execution."
+  },
+  {
+    id: 251,
+    category: CATEGORIES.DATA,
+    question: "A company is repeatedly adjusting its Identity Resolution rules and DMO mappings before going live. As a result, the company discovers that Identity Resolution is consuming significantly more credits than expected every day. The implementation is still in its initial build phase, and users aren’t yet using Unified Profiles for business operations. What should the consultant do first?",
+    choices: [
+      "Delete all Unified Individuals.",
+      "Stop automatic Identity Resolution runs, and then investigate what is causing the reprocessing.",
+      "Enable Rapid Publish for segments to distribute the processing load.",
+      "Delete all Identity Resolution match rules."
+    ],
+    correctAnswerText: "Stop automatic Identity Resolution runs, and then investigate what is causing the reprocessing.",
+    explanation: "If unexpected credit consumption continues during the initial implementation phase, the first priority is to prevent additional unnecessary consumption.\nTherefore, temporarily stop automatic Identity Resolution runs.\nThen investigate what is causing the large amount of reprocessing, including:\n- Adding or removing DMOs\n- Changes to field mappings\n- Changes to match rules\n- Updates to source data\nDepending on the DMO or mapping changes, the next Identity Resolution run can trigger full reprocessing.\nWhen configuration changes are made repeatedly during implementation, it’s important to monitor their impact on credit consumption.\n\nAdditional Technical Context: (A) is incorrect because deleting Unified Individual records does not halt recurring automated ruleset jobs and will trigger full recalculations when the job next fires, worsening credit burn. (C) is incorrect because Rapid Publish pertains to segment publishing schedules (every 1 or 4 hours on rolling 7-day data), which increases Data Cloud credit consumption rather than containing Identity Resolution compute spend. (D) is an overly destructive troubleshooting action that wipes existing configuration rather than pausing execution to audit change triggers."
+  },
+  {
+    id: 252,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company wants to evaluate customers immediately after they perform a specific action on its website and then start an Event-Triggered Flow. A standard segment doesn’t meet the requirement because the company would need to wait for its scheduled publish cycle. Which configuration is most appropriate?",
+    choices: [
+      "Dynamic Segment + Broadcast Flow",
+      "Standard Segment + Segment-Triggered Flow",
+      "Real-Time Data Graph + Real-Time Segment + Event-Triggered Flow",
+      "Waterfall Segment + On-Demand Flow"
+    ],
+    correctAnswerText: "Real-Time Data Graph + Real-Time Segment + Event-Triggered Flow",
+    explanation: "When customer behavior must be evaluated in real time and the result used to start an Event-Triggered Flow, use a Real-Time Segment.\nA Real-Time Segment is created based on a Real-Time Data Graph and can be used with an Event-Triggered Flow.\nThe combination is:\nReal-Time Data Graph → Real-Time Segment → Event-Triggered Flow\nA Dynamic Segment is different from a Real-Time Segment and can be used only with Broadcast Flows.\n\nAdditional Technical Context: (A) is incorrect because Dynamic Segments evaluate asynchronously in scheduled micro-batch intervals (e.g., 1, 4, 12, or 24 hours) and power scheduled batch Broadcast Flows, failing sub-second event evaluation. (B) is incorrect because standard batch segments introduce publish schedule latency, and 'Segment-Triggered Flow' is not the architecture used for streaming behavioral triggers. (D) is incorrect because Waterfall Segments are designed for hierarchical de-duplication splits across batch audience lists rather than low-latency web event orchestration."
+  },
+  {
+    id: 253,
+    category: CATEGORIES.DATA,
+    question: "A company wants to personalize Marketing Cloud Next emails using only the customer’s name. It doesn’t need related data such as order history or loyalty information and only wants to use basic customer attributes available on the Unified Individual. Which configuration should the consultant recommend?",
+    choices: [
+      "Always create a custom Data Graph, even when only the customer’s name is required.",
+      "Use the Unified Individual Data Provider.",
+      "Create a Calculated Insight to aggregate the customer’s name.",
+      "Copy the customer’s name to a Marketing Object and retrieve it using AMPscript."
+    ],
+    correctAnswerText: "Use the Unified Individual Data Provider.",
+    explanation: "Data Graphs play an important role when Data 360 related data is used for personalization in Marketing Cloud Next.\nHowever, if you only need basic Unified Individual attributes, such as the customer’s name, you don’t necessarily need to create a Data Graph.\nFor this type of simple scenario, you can use the Unified Individual Data Provider.\nFor the exam, don’t automatically assume:\nUsing Data 360 data in an email = A Data Graph is always required\nInstead, determine whether you actually need to traverse related data, such as orders or loyalty information.\n\nAdditional Technical Context: (A) is incorrect because building and caching a custom Data Graph incurs unnecessary maintenance and resource overhead when personalization only requires direct scalar attributes from the primary profile. (C) is incorrect because Calculated Insights are multi-dimensional analytical rollup queries (e.g., SUM, AVG, COUNT metrics), not access mechanisms for basic profile string attributes. (D) is incorrect because Marketing Cloud Next leverages native Data Providers and Data Graphs for merge personalization rather than legacy Engagement AMPscript lookup functions."
+  },
+  {
+    id: 254,
+    category: CATEGORIES.DATA,
+    question: "A marketer creates a segment targeting Prospects. Later, some of those Prospects are converted to Leads. The marketer assumes that because converted Prospects no longer appear in the Prospect list view, they also won’t be included in the segment. What is the correct approach?",
+    choices: [
+      "No action is required because converted Prospects are automatically excluded from segments when they disappear from the list view.",
+      "Add a condition such as Prospect Status != Converted to explicitly exclude converted Prospects.",
+      "No action is required because the Prospect record is deleted when it is converted to a Lead.",
+      "Disable Identity Resolution to exclude converted Prospects from the segment."
+    ],
+    correctAnswerText: "Add a condition such as Prospect Status != Converted to explicitly exclude converted Prospects.",
+    explanation: "Converted Prospects don’t normally appear in the standard Prospect list view.\nHowever, this doesn’t mean they’re automatically excluded from segments.\nWhen creating a segment targeting Prospects, use a condition such as:\nProspect Status != Converted\nto explicitly exclude converted Prospects.\nAfter conversion, the relationship between the Prospect and Lead is retained. As long as they share the same unified ID, engagement information can continue to be used after Identity Resolution and Calculated Insights are updated.\n\nAdditional Technical Context: (A) is incorrect because Segment Builder queries the underlying Prospect Data Model Object (DMO) directly, bypassing standard CRM UI list view filters; records persist in the data layer until explicitly filtered out in query criteria. (C) is incorrect because converting a Prospect updates its status and preserves the historical record rather than hard-deleting it from Data 360. (D) is incorrect because Identity Resolution unifies cross-object identities (such as linking a converted Prospect to its new Lead/Contact via Lead-to-Contact match rules) and disabling it neither filters segment populations nor resolves audience targeting errors."
+  },
+  {
+    id: 255,
+    category: CATEGORIES.DATA,
+    question: "A company uses an Actionable List to send emails to trade show attendees. The email contains a personalization field for “Loyalty Rank” retrieved from a standard Data Graph, with a default value of “Standard.” For one recipient, the Data Graph contains the value “Gold.” The same flow also uses Loyalty Rank as a condition in a Decision element. What happens?",
+    choices: [
+      "The email displays “Gold,” and the Decision element can also use “Gold.”",
+      "The email displays “Standard,” while the Decision element can use “Gold” from the Data Graph for condition evaluation.",
+      "The email displays “Gold,” but the Decision element can’t use the Data Graph.",
+      "Actionable Lists can’t access Data Graphs at all, so both the email and Decision element result in an error."
+    ],
+    correctAnswerText: "The email displays “Standard,” while the Decision element can use “Gold” from the Data Graph for condition evaluation.",
+    explanation: "When using an Actionable List, there is an important difference in how Data Graph data can be used.\nEmail content personalization fields can’t retrieve values from the Data Graph.\nTherefore, the email doesn’t display “Gold.” Instead, it displays the configured default value, “Standard.”\nHowever, a flow’s Decision element can use Data Graph values when evaluating conditions.\nSo the distinction is:\n- Content personalization fields → Data Graph values can’t be used\n- Flow Decision elements → Data Graph values can be used\nIf an Actionable List email needs personalization, consider using a Content Variable to pass the value from the flow to the content.\n\nAdditional Technical Context: (A) and (C) are incorrect because Actionable List members lack native direct runtime Data Graph resolution bindings in Content Builder template rendering, causing merge tags referencing the Data Graph directly to fall back to their fallback/default value ('Standard'). (D) is incorrect because Flow orchestration engines execute server-side and retain full contextual read capability into Data Cloud Data Graphs to evaluate flow path branching in Decision elements; it does not throw an execution error."
+  },
+  {
+    id: 256,
+    category: CATEGORIES.DATA,
+    question: "A company wants to store a product master in Marketing Cloud Next for a use case similar to a Data Extension in Marketing Cloud Engagement. The requirements are:\n- Import data from a CSV file.\n- Store product codes, product names, prices, and other product information.\n- Reference product information from emails for personalization.\n- The data isn’t intended to unify customer profiles through Data 360 Identity Resolution.\nWhich feature is most appropriate?",
+    choices: [
+      "Marketing Object",
+      "Unified Individual",
+      "Actionable List",
+      "Waterfall Segment"
+    ],
+    correctAnswerText: "Marketing Object",
+    explanation: "A Marketing Object is a data store for information used in marketing activities.\nIt can be used for purposes similar to a Data Extension in Marketing Cloud Engagement.\nCurrently, data can be manually imported from a CSV file, and the imported data can be referenced using AMPscript Lookup functions for email personalization.\nTypical use cases include:\n- Product master data\n- Store master data\n- Campaign-specific reference data\nAn Actionable List, on the other hand, is used to quickly manage a known audience as a list of recipients.\nIn this scenario, the requirement isn’t about determining who receives the message, but about storing product data that can be referenced from the email. Therefore, Marketing Object is the appropriate choice.\n\nAdditional Technical Context: (B) is incorrect because Unified Individual is the core entity representing consolidated individual profile identity, not a relational lookup catalog for operational inventory or merchandise. (C) is incorrect because Actionable Lists store static audience populations for message targeting rather than reference catalogs for token lookups. (D) is incorrect because Waterfall Segments manage prioritized audience splits and de-duplication hierarchies, not product data storage."
+  },
+  {
+    id: 257,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company sends a promotional email to loyalty members every Monday. The audience is managed using a Data 360 segment, but the segment’s normal publish schedule runs every night. The marketer wants to determine the recipients using the latest available data immediately before the flow runs on Monday. What is the most appropriate approach?",
+    choices: [
+      "Change the flow to an Automation Event-Triggered Flow.",
+      "Configure the target segment to republish immediately before the flow runs.",
+      "Change the segment to a Dynamic Segment and use a Broadcast Flow.",
+      "Open the campaign segment preview before running the flow."
+    ],
+    correctAnswerText: "Configure the target segment to republish immediately before the flow runs.",
+    explanation: "For a scheduled flow that targets a segment, you can configure the target segment to republish immediately before the flow runs.\nThis allows the flow to use the latest possible segment membership without waiting for the segment’s normal publish schedule.\nThe segment preview in a campaign, however, shows data from the most recent segment publication. Simply opening the preview doesn’t refresh the segment.\nThe key requirement in this question is:\nScheduled execution + latest segment membership immediately before execution\n\nAdditional Technical Context: (A) is incorrect because Automation Event-Triggered Flows fire on individual behavioral or streaming event signals (e.g., form submissions, cart abandons) rather than running recurring, scheduled batch audience broadcasts. (C) is incorrect because converting to a Dynamic Segment with a Broadcast Flow requires external programmatic or API orchestration to evaluate membership dynamically at start time, which introduces unnecessary complexity for a native scheduled flow. (D) is incorrect because opening the segment preview in the Campaign UI only reads cached counts from the prior publication job and does not trigger an underlying recalculation query in Data Cloud."
+  },
+  {
+    id: 258,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company wants an external system to call an API, use a specified “region code” to determine the target customers, and send a promotional email. The audience shouldn’t be fixed in advance. Instead, Dynamic Segment membership must be evaluated after the flow starts. Which flow is most appropriate?",
+    choices: [
+      "Audience Flow",
+      "On-Demand Flow",
+      "Broadcast Flow",
+      "Activation-Triggered Flow"
+    ],
+    correctAnswerText: "Broadcast Flow",
+    explanation: "A Broadcast Flow uses a Dynamic Segment to determine its audience.\nRather than fixing the audience before execution, segment membership is evaluated after the flow starts.\nA Broadcast Flow can be invoked from an API, Apex, or another Flow.\nAn Audience Flow, on the other hand, is used when targeting a specific audience, such as Segment Members or List Members, for immediate or scheduled execution.\nFor the exam, when you see:\nDynamic Segment + programmatic execution + membership evaluated after execution starts\nconsider Broadcast Flow.\n\nAdditional Technical Context: (A) is incorrect because Audience Flows evaluate pre-calculated, fixed audience memberships (such as standard segments, campaign members, or actionable lists) either manually or on a scheduled timetable, rather than accepting runtime parameter inputs. (B) is incorrect because On-Demand Flows are transactional pipelines designed to process individual contact point events with specific single-record payloads (such as order confirmations), rather than initiating dynamic batch audience evaluations. (D) is incorrect because Activation-Triggered Flows export segment populations to third-party activation platforms (like external advertising networks or cloud storage), rather than handling inbound API-triggered email dispatches."
+  },
+  {
+    id: 259,
+    category: CATEGORIES.CAMPAIGN,
+    question: "Immediately after an order is completed on an ecommerce site, an external system calls Marketing Cloud Next to send an order confirmation email. The external system must also pass the Order ID and purchase amount to the flow when it invokes the flow. Which flow is most appropriate?",
+    choices: [
+      "On-Demand Flow",
+      "Audience Flow",
+      "Activation-Triggered Flow",
+      "Broadcast Flow"
+    ],
+    correctAnswerText: "On-Demand Flow",
+    explanation: "An On-Demand Flow is appropriate when a flow needs to be invoked immediately from an API or Apex.\nInformation such as the Order ID and purchase amount can also be passed when the flow is invoked through the API.\nThe requirement is:\nOrder completed → External system invokes the flow immediately → Order data is passed to the flow\nTherefore, an On-Demand Flow is the appropriate choice.\nA Broadcast Flow can also be invoked through an API, but its distinguishing characteristic is that it uses a Dynamic Segment to determine the audience.\n\nAdditional Technical Context: (B) is incorrect because Audience Flows target pre-computed batch audience lists or segment members on a schedule or immediate manual blast, rather than processing discrete transactional payloads passed in real-time via API. (C) is incorrect because Activation-Triggered Flows export audience populations to external downstream activation targets (such as ad platforms or Amazon S3). (D) is incorrect because Broadcast Flows execute dynamic segment membership queries based on runtime parameters across a population, rather than processing single-recipient transactional messages."
+  },
+  {
+    id: 260,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company sends a Welcome email when a customer submits a registration form. The marketer asks whether they can tell stakeholders that the email will always be sent within a few seconds of the form submission. What should the consultant say?",
+    choices: [
+      "Yes. Automation Event-Triggered Flows always run in real time.",
+      "No. For both standard and custom events, the flow runs within approximately 15 minutes after the event occurs.",
+      "No. Events are processed every 24 hours.",
+      "Yes, but only when Engagement Signals are used."
+    ],
+    correctAnswerText: "No. For both standard and custom events, the flow runs within approximately 15 minutes after the event occurs.",
+    explanation: "An Automation Event-Triggered Flow can run in response to an event such as a form submission.\nHowever, don’t assume that “event-triggered” means the flow always runs within a few seconds in real time.\nFor both standard events and custom events using Engagement Signals, the flow runs within approximately 15 minutes after the event occurs.\nFor the exam, remember this timing:\nEvent occurs → Flow runs within approximately 15 minutes\n\nAdditional Technical Context: (A) is incorrect because Automation Event-Triggered Flows operate on near-real-time micro-batch ingestion and processing pipelines rather than strict sub-second real-time transactional dispatch. (C) is incorrect because event triggers are continuously ingested and processed within the ~15-minute SLA, not deferred to a 24-hour daily batch schedule. (D) is incorrect because using Engagement Signals still adheres to the standard ~15-minute processing window."
+  },
+  {
+    id: 261,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company doesn’t want to send upcoming promotional emails to customers who purchase a product during the promotional period. If a customer needs to be removed from a specific marketing flow they’re currently participating in, which element is most appropriate?",
+    choices: [
+      "Determine CRM Record for Individual",
+      "Exit from a Flow",
+      "Wait Until Event",
+      "Send to a Flow"
+    ],
+    correctAnswerText: "Exit from a Flow",
+    explanation: "Exit from a Flow is used to remove an individual from a specific Marketing Cloud flow.\nFor example:\nCampaign Entry → Promotional Email → Product Purchase → Exit from subsequent promotional emails\nThis is useful when a customer takes an action that makes further messages in the current flow unnecessary.\nWait Until Event, on the other hand, waits for an event such as an email click or SMS response. It doesn’t remove the customer from the flow.\n\nAdditional Technical Context: (A) is incorrect because Determine CRM Record for Individual resolves identity mapping to correlate a Data Cloud individual to a Lead or Contact record in core Salesforce CRM. (C) is incorrect because Wait Until Event pauses journey execution until a specified engagement signal or timeout occurs, continuing downstream paths rather than terminating flow membership. (D) is incorrect because Send to a Flow transitions or invokes a secondary sub-flow rather than explicitly ejecting the customer from the active execution path."
+  },
+  {
+    id: 262,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company wants to wait after sending an email until the customer clicks a link, and proceed to the next offer email only if the click occurs. Which flow element is most appropriate?",
+    choices: [
+      "Path Experiment",
+      "Einstein Decision",
+      "Wait Until Event",
+      "Determine CRM Record for Individual"
+    ],
+    correctAnswerText: "Wait Until Event",
+    explanation: "Wait Until Event pauses processing until a specific engagement event occurs.\nFor example, it can wait for:\n- Email Link Click\n- SMS Response\n- Custom Engagement Signal\nIn this scenario, the requirement isn’t simply to wait for a specified amount of time. The flow needs to wait for a customer-generated event — the link click.\nTherefore, Wait Until Event is the appropriate element.\n\nAdditional Technical Context: (A) is incorrect because Path Experiment conducts randomized or Bayesian multi-branch A/B/n testing across journeys, not conditional waiting on engagement events. (B) is incorrect because Einstein Decision evaluates machine learning models to route contacts along optimized next-best paths rather than listening for real-time customer event signals. (D) is incorrect because Determine CRM Record for Individual resolves identity mapping to link an Individual profile to an underlying Lead or Contact CRM record."
+  },
+  {
+    id: 263,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company is using Path Experiment to compare three paths with different email send times. Automated is selected, and at the end of the test period, none of the paths reaches the required probability of outperforming all the other paths. What happens next?",
+    choices: [
+      "The path with the highest number of clicks is always selected as the winner.",
+      "All individuals exit the flow.",
+      "The configured Fallback Behavior is applied.",
+      "The test period is automatically extended indefinitely."
+    ],
+    correctAnswerText: "The configured Fallback Behavior is applied.",
+    explanation: "An Automated Path Experiment uses Bayesian Prediction to determine the winning path.\nA path is selected as the winner when it reaches a 95% or greater probability of outperforming all the other paths.\nIf no path reaches the required confidence level, the configured Fallback Behavior is applied.\nFor the exam, remember the sequence:\nAutomated → Bayesian Prediction → 95% → No winner → Fallback Behavior\n\nAdditional Technical Context: (A) is incorrect because raw metric leaders are not declared winners without achieving the mandatory 95% statistical confidence threshold under the Bayesian model. (B) is incorrect because failing to find a statistically significant winner does not abort participant journeys or force flow exits. (D) is incorrect because tests conclude when their designated evaluation window closes rather than running indefinitely."
+  },
+  {
+    id: 264,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A marketer wants to use Path Experiment to test only 20% of the audience first, review the results, and then manually select the winning path for the remaining 80%. The flow is configured to run every week. Which statement about this requirement is correct?",
+    choices: [
+      "The marketer can use it as configured by selecting Manual and enabling subset testing.",
+      "Subset testing can be used if the experiment is changed to Automated.",
+      "Subset testing is limited to flows configured to run only once, so it can’t be used with this configuration.",
+      "Subset testing can be used with recurring flows as long as the test group is at least 50% of the audience."
+    ],
+    correctAnswerText: "Subset testing is limited to flows configured to run only once, so it can’t be used with this configuration.",
+    explanation: "When Manual is selected and Test a subset of your audience is enabled, you can first test a portion of the audience, review the results, and then manually select the winning path.\nHowever, subset testing is limited to flows configured to run only once.\nBecause this flow is configured to run every week, the proposed configuration doesn’t meet that requirement.\nFor the exam, don’t assume that selecting Manual always allows subset testing. The flow’s execution schedule also matters.\n\nAdditional Technical Context: (A) and (D) are incorrect because recurring scheduled flows continuously evaluate new entries across execution cycles, making a fixed upfront subset evaluation window technically unsupported for manual two-phase rollout splits. (B) is incorrect because Automated mode employs Bayesian multi-armed bandit routing across participants over time, rather than establishing a static initial holdout sample followed by manual human selection."
+  },
+  {
+    id: 265,
+    category: CATEGORIES.DATA,
+    question: "After Identity Resolution, a Unified Individual is associated with the following email addresses:\n- CRM: business@example.com\n- Marketing Cloud Engagement: personal@example.com\n- External Data: other@example.com\nThe company wants to prioritize the CRM email address and use an address from another source only when a CRM address isn’t available. Which field must be included in the Data Graph for the Activation Template’s Source Priority Order to work correctly?",
+    choices: [
+      "Unified Individual ID",
+      "Data Source",
+      "Engagement Score",
+      "Communication Subscription ID"
+    ],
+    correctAnswerText: "Data Source",
+    explanation: "To configure a Source Priority Order, such as prioritizing CRM over other sources, Marketing Cloud Next needs to identify which data source each Contact Point came from.\nTherefore, Data Source must be included for Contact Point Email in the Data Graph.\nIf Data Source isn’t included, Source Priority Order can’t be applied correctly, and the contact points are effectively treated like Any Source.\nFor the exam, remember:\nSource Priority Order → Contact Point → Data Source\n\nAdditional Technical Context: (A) is incorrect because Unified Individual ID links the unified profile cluster but does not provide provenance metadata for individual child contact points. (C) is incorrect because Engagement Score measures interaction recency/frequency rather than origin system metadata. (D) is incorrect because Communication Subscription ID tracks channel consent and subscription status, not the contributing upstream origin source needed for priority ranking."
+  },
+  {
+    id: 266,
+    category: CATEGORIES.DATA,
+    question: "A company has configured the Activation Template’s Source Priority Order to use only CRM Business Email as the destination. Therefore, instead of using Any, the company configured only the CRM Business Email condition. Some Unified Individuals have only a personal email address. What happens to these customers?",
+    choices: [
+      "The personal email address is automatically used as a fallback.",
+      "The email address associated with the most recently created Unified Individual is selected.",
+      "They may be excluded from the Activation because no Contact Point meets the configured conditions.",
+      "A Business Email is automatically generated by the Reconciliation Rule."
+    ],
+    correctAnswerText: "They may be excluded from the Activation because no Contact Point meets the configured conditions.",
+    explanation: "In Source Priority Order, you can restrict the destination to specific sources or Contact Point types by not selecting Any.\nHowever, if a Unified Individual doesn’t have a Contact Point that meets those conditions, the individual may be excluded from the Activation.\nThis allows you to strictly control which Contact Points can be used, but it can also reduce the number of individuals eligible for Activation.\n\nAdditional Technical Context: (A) is incorrect because fallback behavior only evaluates downstream priority tiers if explicitly configured (such as adding 'Any' or secondary sources to the priority ladder); without an explicit fallback tier, unmatched contact points fail qualification. (B) is incorrect because Activation engines evaluate Contact Point records according to deterministic Source Priority Order rules rather than arbitrarily selecting recent Unified Individual parent attributes. (D) is incorrect because Reconciliation Rules select winning values from existing source records during identity resolution and never fabricate synthetic email values."
+  },
+  {
+    id: 267,
+    category: CATEGORIES.PLATFORM,
+    question: "An image from Workspace A is shared with Workspace B. Workspace B is also shared with Workspace C. The marketer expects the image from Workspace A to be available in Workspace C, but it doesn’t appear. What is the most appropriate action?",
+    choices: [
+      "Republish the image from Workspace B.",
+      "Share Workspace A directly with Workspace C.",
+      "Set Workspace C’s default brand to the same brand as Workspace A.",
+      "Unpublish the image in Workspace A first."
+    ],
+    correctAnswerText: "Share Workspace A directly with Workspace C.",
+    explanation: "Sharing between Marketing Workspaces is not transitive.\nIn other words:\nA → B → C\ndoesn’t mean that content from Workspace A is automatically available in Workspace C.\nTo make the image from Workspace A available in Workspace C, you need to configure direct sharing from A to C.\nFor the exam, remember:\nWorkspace sharing is not transitive.\n\nAdditional Technical Context: (A) is incorrect because Workspace B only holds read/reference access to the shared asset origin and cannot re-author or publish it as its own originating source asset to cascade further down. (C) is incorrect because Brand identity and visual styling configurations govern branding defaults and styling themes, not workspace asset repository access permissions. (D) is incorrect because unpublishing the asset in Workspace A would retract it from all consumers, including Workspace B, worsening the issue."
+  },
+  {
+    id: 268,
+    category: CATEGORIES.PLATFORM,
+    question: "A company normally uses the default brand configured for its Marketing Workspace. However, for a new product landing page, the company wants to use the colors and tone of a different brand. Which statement is correct?",
+    choices: [
+      "After a default brand is configured for a Workspace, it can’t be changed for individual content.",
+      "A new Workspace must be created to use a different brand.",
+      "A Workspace can have a default brand while individual content can use a different brand.",
+      "Brands can be used only for emails and aren’t available for landing pages."
+    ],
+    correctAnswerText: "A Workspace can have a default brand while individual content can use a different brand.",
+    explanation: "You can configure a default brand for each Marketing Workspace, but this doesn’t permanently lock all content to that brand.\nDepending on the requirements of a product, event, or campaign, you can specify a different brand for individual content.\nBrands can be used not only with emails, but also with landing pages and forms.\nBrand identity and brand tone can also be used by Agentforce when generating content.\n\nAdditional Technical Context: (A) and (B) are incorrect because the workspace-level brand configuration acts strictly as an operational default/fallback; content authors can override branding per asset (email, landing page, form) without creating separate workspaces or altering workspace sharing boundaries. (D) is incorrect because Brand identity objects apply uniformly across omni-channel assets, including landing pages, forms, and email templates."
+  },
+  {
+    id: 269,
+    category: CATEGORIES.CAMPAIGN,
+    question: "An image and a CTA button in an email are linked to the same Personalization Point. Both have “Gold,” “Silver,” and “Standard” variations and use the same targeting rules. If the marketer changes the priority of the Gold variation, what happens?",
+    choices: [
+      "The change is reflected only in the image.",
+      "The change is reflected only in the CTA button.",
+      "The priority change is reflected in both linked components.",
+      "The link between the components is automatically removed."
+    ],
+    correctAnswerText: "The priority change is reflected in both linked components.",
+    explanation: "Components linked to the same Personalization Point share:\n- Variations\n- Targeting rules\n- Priority\nTherefore, changing the priority of the Gold variation affects both the linked image and CTA button.\nHowever, the actual content — such as the image, text, or styling — is not synchronized.\nFor the exam, remember:\nRules are shared / Content is not shared\n\nAdditional Technical Context: (A) and (B) are incorrect because Personalization Points centrally decouple targeting logic and prioritization from presentation layer assets, propagating rule updates uniformly across all bound components. (D) is incorrect because modifying rule parameters within a shared Personalization Point preserves existing component relationships rather than unlinking or severing them."
+  },
+  {
+    id: 270,
+    category: CATEGORIES.CAMPAIGN,
+    question: "An image and a CTA button in an email are linked to the same Personalization Point. The Personalization Point has three variations:\n- Premium Member\n- Tokyo Resident\n- Default\nThe marketer changes the priority of Premium Member to the highest priority from the image component and also replaces the image with a new design. A customer who meets both the “Premium Member” and “Tokyo Resident” conditions then receives the email. What happens to the image and CTA button?",
+    choices: [
+      "Premium Member is prioritized for both the image and CTA button, and the new image design is also applied to the CTA button.",
+      "Premium Member is prioritized only for the image, while the CTA button uses the previous priority.",
+      "Premium Member is prioritized for both the image and CTA button, but the image design change isn’t applied to the CTA button.",
+      "Because the customer meets multiple conditions, Default is displayed for both the image and CTA button."
+    ],
+    correctAnswerText: "Premium Member is prioritized for both the image and CTA button, but the image design change isn’t applied to the CTA button.",
+    explanation: "Multiple components linked to the same Personalization Point share:\n- Variations\n- Targeting rules\n- Priority\nTherefore, when the marketer changes the priority of Premium Member from the image component, the same priority is also applied to the CTA button.\nHowever, linked components don’t synchronize their actual content, such as:\n- Images\n- Text\n- Styles\nIn this scenario, the customer meets both the Premium Member and Tokyo Resident conditions. Because Premium Member has the higher shared priority, that variation is selected for both components.\nHowever, the new image design itself isn’t applied to the CTA button.\nThe key distinction for the exam is:\nPriority is shared / Content itself is not shared\n\nAdditional Technical Context: (A) is incorrect because visual media and copy are independently authored assets tied to the component type and are never mapped across distinct component modalities (an image asset does not overwrite a button layout/text). (B) is incorrect because priority order is maintained globally on the underlying Personalization Point entity rather than locally per UI component. (D) is incorrect because rule evaluation deterministically awards the higher-priority matching variation ('Premium Member') rather than failing over to the fallback default when multiple rules evaluate to true."
+  },
+  {
+    id: 271,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company uses a Repeater Component in an order confirmation email to display a list of products included in the customer’s order. The Repeater Source is configured with product data related to the order, but the marketer adds the following requirements:\n- Display only products that are in stock.\n- Display products in descending order of price.\n- Display a maximum of three products.\nWhat is the most appropriate way to meet these requirements?",
+    choices: [
+      "Create three Personalization Points and display each product individually.",
+      "Configure filtering, sorting, and the maximum number of items on the Repeater Source.",
+      "Create three Dynamic Content Variations and configure targeting rules based on price.",
+      "Use Path Experiment to distribute the products across three paths."
+    ],
+    correctAnswerText: "Configure filtering, sorting, and the maximum number of items on the Repeater Source.",
+    explanation: "A Repeater Component doesn’t simply repeat multiple records. You can also control which records are displayed through the Repeater Source.\nFor this scenario:\n- In-stock products only → Filtering\n- Highest price first → Sorting\n- Maximum of three products → Limit the number of items displayed\nThere is no need to create separate Personalization Points or Dynamic Content Variations for each product.\nDynamic Content is appropriate when you want to switch between content variations based on conditions such as customer attributes. A Repeater, on the other hand, is designed to repeatedly display multiple related records according to specified conditions.\n\nAdditional Technical Context: (A) and (C) are incorrect because Personalization Points and Dynamic Content Variations are designed to conditionally render alternate content versions based on profile attributes, not iterate over child/related entity record collections. (D) is incorrect because Path Experiment manages branch testing and traffic splits across journey flows, having no bearing on in-email layout iteration or array data binding."
+  },
+  {
+    id: 272,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company starts a flow when an order completion event occurs and sends an order confirmation email. The email needs to display two values:\n- The Order Number included in the order completion event.\n- The Estimated Delivery Date retrieved from an external shipping system through an HTTP Connector while the flow is running.\nWhich combination provides each value to the email using the most appropriate source?",
+    choices: [
+      "Order Number: Event / Estimated Delivery Date: Content Variable",
+      "Order Number: Content Variable / Estimated Delivery Date: Event",
+      "Order Number: Lookup Data Graph / Estimated Delivery Date: Event",
+      "Order Number: Profile Data Graph / Estimated Delivery Date: Lookup Data Graph"
+    ],
+    correctAnswerText: "Order Number: Event / Estimated Delivery Date: Content Variable",
+    explanation: "The key is to identify where each value comes from.\nThe Order Number is already included in the event that started the flow. When event data needs to be used directly in content, the Event Data Source is appropriate.\nThe Estimated Delivery Date, however, isn’t part of the original event. It is retrieved from an external system using an HTTP Connector while the flow is running.\nFor values retrieved or processed within the flow and passed to content at runtime, use a Content Variable.\nFor the exam, remember:\nData from the triggering event → Event\nData retrieved or generated within the flow → Content Variable\n\nAdditional Technical Context: (B) reverses the data origin bindings, attempting to bind in-flight asynchronous flow variables to static event payload schemas and vice-versa. (C) and (D) are incorrect because Profile and Lookup Data Graphs query persisted Data Cloud DMO records and indexes; they do not capture transient trigger event properties or live, ephemeral HTTP Callout step responses generated dynamically mid-flow."
+  },
+  {
+    id: 273,
+    category: CATEGORIES.DATA,
+    question: "A company wants to display warranty information for purchased products in a post-purchase email. The warranty information is stored in a product master, which has no relationship with the customer or Unified Individual. When creating the email, the product master is referenced using the product code. The same email will also reference several other independent, non-profile data sources, such as store master data and campaign master data. What is the most appropriate design?",
+    choices: [
+      "Relate all master data to Unified Individual and retrieve it through a Profile Data Graph.",
+      "Use a Lookup Data Graph for each master data source and retrieve the required record using its Primary Key.",
+      "Add each master data source as an Event Data Source and search for the required record when the email is rendered.",
+      "Create Dynamic Content for each master data source and use targeting rules to select the appropriate record."
+    ],
+    correctAnswerText: "Use a Lookup Data Graph for each master data source and retrieve the required record using its Primary Key.",
+    explanation: "A Lookup Data Graph is appropriate when you need to retrieve non-profile data that is independent of the customer profile, such as product or store master data, using a Primary Key.\nIn this scenario, the product master has no relationship with Unified Individual. There is no need to create such a relationship simply to include the data in a Profile Data Graph.\nFor example:\n- Product Code → Product Master\n- Store Code → Store Master\n- Campaign Code → Campaign Master\nEach record can be retrieved using its respective Primary Key.\nYou can add up to five Lookup Data Graph Data Providers to a single content item, so this limit should also be considered when designing content that references multiple independent data sources.\nFor the exam, remember the distinction:\nFollow relationships from Unified Individual → Profile Data Graph\nRetrieve independent data by Primary Key → Lookup Data Graph\n\nAdditional Technical Context: (A) is incorrect because forcing unassociated reference catalogs into relationships with the Unified Individual entity pollutes the profile data model and creates severe data modeling and identity resolution inefficiencies. (C) is incorrect because Event Data Sources only supply contextual payload fields captured directly from the triggering interaction event, not arbitrary secondary table queries executed at send time. (D) is incorrect because Dynamic Content manages conditional visual variations based on rules rather than relational key-value lookups from standalone master tables."
+  },
+  {
+    id: 274,
+    category: CATEGORIES.PLATFORM,
+    question: "A company wants to retire an existing landing page and redirect anyone who visits its URL to a new campaign page. The marketer is planning to simply unpublish the old landing page. What should the consultant recommend?",
+    choices: [
+      "Unpublish the page first, and then edit the URL alias to specify the new URL.",
+      "Before unpublishing the page, deactivate the URL alias and configure a URL redirect.",
+      "Delete the landing page so that visitors are automatically redirected to the new page.",
+      "Change the published URL domain to the same domain as the new page."
+    ],
+    correctAnswerText: "Before unpublishing the page, deactivate the URL alias and configure a URL redirect.",
+    explanation: "When a landing page is unpublished, it returns to Draft status and is no longer accessible through its published URL or URL alias.\nIf you simply unpublish the page without configuring a redirect, visitors are directed to a generic page indicating that the URL doesn’t exist.\nIf visitors need to be redirected to another page, deactivate the URL alias and configure the URL redirect before unpublishing the landing page.\nAlso remember that the URL alias itself can be edited only while the landing page is in Draft status.\n\nAdditional Technical Context: (A) is incorrect because unpublishing immediately severs public routing to the alias, serving an HTTP 404/not-found error page before a redirect can catch incoming traffic. (C) is incorrect because deleting an asset purges the record entirely without creating automatic redirect rules to any alternate target. (D) is incorrect because modifying domain bindings affects workspace-level DNS routing and CDN endpoints rather than mapping path-level 301/302 redirects between specific pages."
+  },
+  {
+    id: 275,
+    category: CATEGORIES.PLATFORM,
+    question: "A company uses Marketing Cloud Next Growth Edition. The marketing team has the following requirements:\n- Predict the optimal send time for each customer.\n- Exclude bot-generated opens and clicks to improve the accuracy of engagement metrics.\n- Don’t use additional features that require Advanced Edition.\nWhich combination is most appropriate?",
+    choices: [
+      "Einstein Send Time Optimization + Einstein Metrics Guard",
+      "Einstein Engagement Frequency + Einstein Engagement Scoring",
+      "Einstein Send Time Optimization + Einstein Engagement Scoring",
+      "Einstein Engagement Frequency + Einstein Metrics Guard"
+    ],
+    correctAnswerText: "Einstein Send Time Optimization + Einstein Metrics Guard",
+    explanation: "This question requires you to consider both what each feature does and which edition supports it.\nEinstein Send Time Optimization (ESTO) predicts the optimal send time to maximize customer engagement.\nEinstein Metrics Guard (EMG) identifies and filters bot-generated opens and clicks, helping provide more accurate engagement metrics.\nBoth features are available in Growth Edition and Advanced Edition.\nIn contrast:\n- Einstein Engagement Frequency\n- Einstein Engagement Scoring\nare Advanced Edition features.\nFor the exam, it can help to associate each feature with its primary purpose:\n- ESTO = Time\n- EEF = Frequency\n- EES = Scoring\n- EMG = Metrics\n\nAdditional Technical Context: (B), (C), and (D) are incorrect because Einstein Engagement Frequency (EEF) and Einstein Engagement Scoring (EES) are gated behind the Advanced Edition tier. In addition, EEF governs message saturation and burn-out rather than delivery timing, and EES computes likelihood-to-engage scores rather than filtering anomalous automated bot behavior."
+  },
+  {
+    id: 276,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company is using Agentforce Campaign Creation to create a campaign for a new product. The marketer enters the campaign objective, reviews the brief and scenario preview, adjusts the brand and messaging, and then creates the campaign as a two-way scenario. What happens next?",
+    choices: [
+      "Only the campaign is created, and the marketer must manually create the flow and content.",
+      "The flow and content are created, and for a two-way scenario, a transfer-to-agent element is added at the end of the flow.",
+      "Only the segment is created, and no flow is created.",
+      "Agentforce isn’t used for a two-way scenario, and the campaign is created as a standard Broadcast Model."
+    ],
+    correctAnswerText: "The flow and content are created, and for a two-way scenario, a transfer-to-agent element is added at the end of the flow.",
+    explanation: "Campaign Creation Agent doesn’t just create a campaign brief. Based on the information provided, it can create the campaign, audience, flow, and content.\nA typical process is:\nIdentify Business Unit → Confirm Objective → Confirm Two-Way Scenario → Brief → Scenario Preview → Adjust Brand and Scenario → Create Campaign → Create Flow and Content\nIf a two-way scenario is selected, a transfer-to-agent element is added at the end of the flow.\nThe key to this question is understanding both that Campaign Creation Agent goes beyond brief generation and that a two-way scenario includes a handoff to Agentforce.\n\nAdditional Technical Context: (A) and (C) are incorrect because the autonomous capabilities of the Agentforce Campaign Creation Agent generate downstream executable assets (including the campaign record, flow logic, and associated email/SMS content templates) rather than stopping at the high-level brief or segment level. (D) is incorrect because two-way scenarios are specifically designed to leverage Agentforce conversational agents to interact directly with incoming customer replies."
+  },
+  {
+    id: 277,
+    category: CATEGORIES.PLATFORM,
+    question: "A marketer wants to use Campaign Creation Agent. Other users in the same org can see the Agentforce icon at the top of the screen, but this marketer can’t. The marketer already has access to Marketing Cloud Next and can view campaigns. What should be checked first?",
+    choices: [
+      "Whether Data 360 Identity Resolution has already run.",
+      "Whether the user has permission to access Agentforce.",
+      "Whether Einstein Engagement Scoring is enabled.",
+      "Whether at least one Campaign Brief has already been created."
+    ],
+    correctAnswerText: "Whether the user has permission to access Agentforce.",
+    explanation: "Campaign Creation Agent is an Employee Agent used by Marketing Cloud Next users, rather than a customer-facing agent.\nTherefore, access to Marketing Cloud Next or campaigns alone isn’t sufficient.\nThe user must also have permission to access Agentforce.\nIf other users can see the Agentforce icon but one user can’t, the first thing to check is that user’s permissions.\n\nAdditional Technical Context: (A) is incorrect because Identity Resolution runs backend unification jobs on customer data and has no effect on user interface licensing, visibility, or global header icon rendering. (C) is incorrect because Einstein Engagement Scoring is an Advanced Edition behavioral modeling tool, not a functional prerequisite for accessing the global Agentforce assistant. (D) is incorrect because the Agentforce interface is used to generate the initial brief itself; pre-existing campaign briefs are not required to reveal the platform icon."
+  },
+  {
+    id: 278,
+    category: CATEGORIES.PLATFORM,
+    question: "A company wants to create a new campaign using Campaign Creation Agent. The marketing team has already prepared an existing strategy document containing the campaign objective, target audience, messaging strategy, and other details. The marketer wants to use that existing material to create the campaign brief instead of re-entering everything through a conversation with Agentforce. What is the most appropriate approach?",
+    choices: [
+      "Upload the strategy document to Salesforce Files and use it as a source when Campaign Creation Agent creates the brief.",
+      "Ingest the strategy document into a Data 360 DLO and associate it with the campaign through Identity Resolution.",
+      "Register the strategy document as a brand in the Marketing Workspace and generate the brief from the brand identity.",
+      "Campaign Creation Agent can use only information entered through conversation, so existing documents can’t be used."
+    ],
+    correctAnswerText: "Upload the strategy document to Salesforce Files and use it as a source when Campaign Creation Agent creates the brief.",
+    explanation: "Campaign Creation Agent can use not only information entered conversationally, but also existing briefs or strategy documents uploaded to Salesforce Files when creating a campaign brief.\nIf the campaign strategy is already documented, the marketer can reuse that material instead of entering the same information again.\nData 360 DLOs and Identity Resolution are intended for customer data integration, not for converting campaign strategy documents into briefs.\nBrand settings are used to apply brand identity and tone to generated content, but they aren’t the mechanism for managing campaign strategy documents.\nFor the exam, remember:\nExisting Brief / Strategy Document → Salesforce Files → Campaign Creation Agent\n\nAdditional Technical Context: (B) is incorrect because Data Lake Objects (DLOs) and Identity Resolution rules are dedicated to customer engagement, profile unification, and harmonized data models, not document grounding for prompt generation. (C) is incorrect because Brand records store styling guidelines, logos, and tonal parameters rather than multi-page campaign strategy collateral. (D) is incorrect because Agentforce natively supports grounding against unstructured files uploaded to core Salesforce Files."
+  },
+  {
+    id: 279,
+    category: CATEGORIES.CAMPAIGN,
+    question: "A company is using Campaign Creation Agent to create a campaign for a new product. The marketer wants not only to send the initial promotional message, but also to allow the conversation to transition to Agentforce if the customer replies. What happens to the generated flow when this requirement is configured?",
+    choices: [
+      "No flow is created for a two-way scenario because Agentforce manages all message delivery.",
+      "When a two-way scenario is selected, a transfer-to-agent element is added at the end of the flow.",
+      "When a two-way scenario is selected, all message elements are automatically converted to an On-Demand Flow.",
+      "Two-way scenarios can only be configured after the campaign is created and can’t be specified through Campaign Creation Agent."
+    ],
+    correctAnswerText: "When a two-way scenario is selected, a transfer-to-agent element is added at the end of the flow.",
+    explanation: "Campaign Creation Agent allows you to specify whether the campaign should use a two-way scenario during the campaign creation process.\nWhen a two-way scenario is selected, the generated flow includes a transfer-to-agent element at the end, allowing the subsequent conversation to be handed off to Agentforce.\nA simplified process is:\nConfirm Objective → Select Two-Way Scenario → Brief → Scenario Preview → Adjust → Campaign → Flow / Content\nThe key point is that Campaign Creation Agent doesn’t only generate content. It also configures the flow based on the campaign scenario.\n\nAdditional Technical Context: (A) is incorrect because Campaign Creation Agent still constructs the underlying flow scaffold and initial broadcast/messaging logic to initiate outbound communication. (C) is incorrect because two-way scenarios do not morph outbound paths into On-Demand Flows; they orchestrate the conversation handoff within the generated flow architecture. (D) is incorrect because specifying a two-way interaction scenario is a native, early-stage conversational configuration option available directly within the Agentforce interaction flow prior to asset generation."
+  },
+  {
+    id: 280,
+    category: CATEGORIES.PLATFORM,
+    question: "A company using Growth Edition is considering several AI-powered marketing capabilities.\nThe requirements are:\n1. Predict the best time to send messages to each customer.\n2. Reduce the impact of bot-generated opens and clicks to improve metric accuracy.\n3. Score each customer’s likelihood of engagement.\nThe company doesn’t plan to upgrade to Advanced Edition at this time. Which statement is correct about what can be achieved with the current edition?",
+    choices: [
+      "All three capabilities are available.",
+      "Capabilities 1 and 2 are available, but capability 3 requires Advanced Edition.",
+      "Capabilities 1 and 3 are available, but capability 2 requires Advanced Edition.",
+      "Capabilities 2 and 3 are available, but capability 1 requires Advanced Edition."
+    ],
+    correctAnswerText: "Capabilities 1 and 2 are available, but capability 3 requires Advanced Edition.",
+    explanation: "Marketing Cloud Next predictive AI features have different edition requirements.\nThe three requirements correspond to:\n- Predict optimal send time → Einstein Send Time Optimization (ESTO)\n- Filter bot-generated opens and clicks → Einstein Metrics Guard (EMG)\n- Score likelihood of engagement → Einstein Engagement Scoring (EES)\nAvailable in Growth and Advanced Editions:\n- ESTO\n- EMG\nAvailable in Advanced Edition only:\n- EES\n- Einstein Engagement Frequency (EEF)\nTherefore, with Growth Edition, the company can achieve requirements 1 and 2, but not requirement 3.\nFor the exam, think in two steps:\nRequirement → Identify the AI feature → Check the edition\n\nAdditional Technical Context: (A), (C), and (D) are incorrect because Einstein Engagement Scoring (EES, Requirement 3) and Einstein Engagement Frequency (EEF) are strictly gated behind the Advanced Edition tier, whereas Einstein Send Time Optimization (ESTO, Requirement 1) and Einstein Metrics Guard (EMG, Requirement 2) are fully supported out-of-the-box in Growth Edition."
+  },
+  {
+    id: 281,
+    category: CATEGORIES.ANALYTICS,
+    question: "A company is building out its analytics environment in Marketing Cloud Next. The marketing leader has the following two requirements:\n- Review overall trends and performance across multiple campaigns and content assets.\n- Investigate the reasons why a specific email failed to be delivered.\nWhich combination of features is most appropriate?",
+    choices: [
+      "Marketing Performance Intelligence + Deliverability",
+      "Campaign Performance + Engagement Score",
+      "Email Engagement + Engagement Details",
+      "Flow Performance + Conversion"
+    ],
+    correctAnswerText: "Marketing Performance Intelligence + Deliverability",
+    explanation: "This question requires you to distinguish between the level of analysis and the purpose of the analysis.\nFor the first requirement:\nReview overall trends and performance across multiple campaigns and content assets\nuse Marketing Performance Intelligence.\nFor the second requirement:\nInvestigate the reason a specific email failed to be delivered\nuse Deliverability.\nThe main distinction is:\n- Marketing Performance Intelligence → Overall marketing trends and insights\n- Campaign Performance → Campaign-level performance\n- Flow Performance → Flow-level performance\n- Content Performance → Content-level performance\n- Deliverability → Email delivery status and failure reasons\n\nAdditional Technical Context: (B) is incorrect because Campaign Performance evaluates a single discrete campaign's scope rather than overarching multi-campaign portfolio intelligence, and Engagement Score models customer propensity rather than granular message transport failure diagnostics. (C) is incorrect because Email Engagement measures recipient interactions (opens/clicks) rather than underlying SMTP/MTA bounce and deliverability failure codes. (D) is incorrect because Flow Performance evaluates orchestration node execution metrics rather than message delivery diagnostic logs."
+  },
+  {
+    id: 282,
+    category: CATEGORIES.ANALYTICS,
+    question: "A company has been using Marketing Performance Intelligence for some time. Salesforce recently added new analytics capabilities to Marketing Performance Intelligence, and the administrator wants to use them. However, the new analytics features don’t appear in the existing environment. The user already has the Tableau Next Included App Business User permission set. What is the most appropriate action?",
+    choices: [
+      "Remove and reassign the Tableau Next Included App Business User permission set.",
+      "Uninstall Marketing Performance Intelligence and reinstall the latest version.",
+      "Grant access to the standard CRM report folders.",
+      "Redeploy all Data 360 Data Streams."
+    ],
+    correctAnswerText: "Uninstall Marketing Performance Intelligence and reinstall the latest version.",
+    explanation: "Installing Marketing Performance Intelligence once doesn’t necessarily mean that every analytics capability added in future releases is automatically applied to the existing installation.\nWhen new reports or analytics capabilities are introduced, you may need to reinstall Marketing Performance Intelligence to update it to the latest configuration.\nIn this scenario, the user already has the Tableau Next Included App Business User permission set, so user access isn’t the first issue to investigate.\nFor the exam, distinguish between these situations:\n- Can’t access Marketing Performance Intelligence → Check Tableau Next Included App Business User\n- New Marketing Performance Intelligence capabilities don’t appear → Consider reinstalling Marketing Performance Intelligence\n- Can’t access standard CRM reports or dashboards → Check report or dashboard folder access\n\nAdditional Technical Context: (A) is incorrect because toggling the user license/permission set does not provision newly released underlying dashboard metadata or assets that are missing from the org instance. (C) is incorrect because Marketing Performance Intelligence runs on packaged Tableau Next/CRM Analytics embedded templates rather than standard Salesforce CRM report folder structures. (D) is incorrect because Data 360 Data Streams govern raw data ingestion into Data Lake Objects (DLOs), not the visual presentation layer updates of the packaged analytics app."
+  },
+  {
+    id: 283,
+    category: CATEGORIES.ANALYTICS,
+    question: "An email campaign has the following results:\n- Emails sent: 20,000\n- Opens: 8,000\n- Clicks: 2,000\nThe marketer wants to know:\n1. What percentage of sent emails resulted in a click?\n2. What percentage of opened emails resulted in a click?\nWhich combination is correct?",
+    choices: [
+      "1 = 25% / 2 = 10%",
+      "1 = 10% / 2 = 25%",
+      "1 = 40% / 2 = 10%",
+      "1 = 25% / 2 = 40%"
+    ],
+    correctAnswerText: "1 = 10% / 2 = 25%",
+    explanation: "This question tests the difference in the denominator used for the email click rate and Email Click-Through Rate.\nFirst:\nEmail click rate\n2,000 ÷ 20,000 = 10%\nThe denominator is the number of emails sent.\nNext:\nEmail Click-Through Rate\n2,000 ÷ 8,000 = 25%\nThe denominator is the number of opens.\nTherefore:\n- Email click rate = 10%\n- Email Click-Through Rate = 25%\nBecause the names are similar, the key is to identify what is being used as the denominator.\n\nAdditional Technical Context: In Salesforce Marketing Cloud Next reporting conventions, Click Rate (or Click-to-Delivered/Sent Rate) measures the raw reach effectiveness across the entire dispatched volume ($Clicks / Sends$), while Click-Through Rate (CTR or Click-to-Open Rate / CTOR in traditional terminology) measures content resonance and conversion efficiency among users who actively opened the communication ($Clicks / Opens$). Option (A) inverts the formulas, (C) confuses the open rate ($8,000 / 20,000 = 40\\%$) with calculation 1, and (D) swaps the results."
+  },
+  {
+    id: 284,
+    category: CATEGORIES.ANALYTICS,
+    question: "Two users report that they can’t see analytics features.\n- User A: Can’t see “Marketing Performance” in Marketing Performance Intelligence.\n- User B: Can’t see the standard CRM Email Engagement dashboard.\nWhat should the consultant check first for each user?",
+    choices: [
+      "User A: Marketing Cloud Admin / User B: Data Cloud Architect",
+      "User A: Tableau Next Included App Business User / User B: Access to the report or dashboard folder",
+      "User A: Report folder access / User B: Tableau Next Included App Business User",
+      "Marketing Cloud Manager for both users"
+    ],
+    correctAnswerText: "User A: Tableau Next Included App Business User / User B: Access to the report or dashboard folder",
+    explanation: "Marketing Performance Intelligence and standard CRM reports use different access models.\nUsers who need access to Marketing Performance Intelligence require the:\n- Tableau Next Included App Business User\npermission set.\nFor standard CRM dashboards and reports, such as Email Engagement, check whether the user has access to the report folder or dashboard folder where the asset is stored.\nThe distinction is:\n- Marketing Performance Intelligence isn’t visible → Check Tableau Next Included App Business User\n- Standard report or dashboard isn’t visible → Check folder access\n\nAdditional Technical Context: (A) and (D) are incorrect because broad administrative role assignments like Marketing Cloud Admin, Data Cloud Architect, or Marketing Cloud Manager do not automatically resolve missing Tableau Next platform app permission sets or granular folder-level sharing permissions. (C) is incorrect because it inverts the two permission mechanisms across the respective tools."
+  },
+  {
+    id: 285,
+    category: CATEGORIES.ANALYTICS,
+    question: "A Contact engaged with the following three campaigns:\n- Campaign A: Clicked an email 40 days before the Opportunity was created.\n- Campaign B: Clicked an SMS 10 days before the Opportunity was created.\n- Campaign C: Clicked an email 5 days after the Opportunity was created.\nThe person is registered as a Contact Role on the Opportunity, and the Opportunity later becomes Closed Won.\nWhen using the First Touch model in Opportunity Influence, which campaign receives 100% of the credit?",
+    choices: [
+      "Campaign A",
+      "Campaign B",
+      "Campaign C",
+      "Campaign B and Campaign C receive 50% each"
+    ],
+    correctAnswerText: "Campaign B",
+    explanation: "For Opportunity Influence, eligible click engagements occur during the period:\nFrom 30 days before Opportunity creation through Closed Won\nLooking at each engagement:\n- Campaign A: 40 days before Opportunity creation → Outside the eligible window\n- Campaign B: 10 days before Opportunity creation → Eligible\n- Campaign C: 5 days after Opportunity creation → Eligible\nThe First Touch model assigns 100% of the credit to the earliest eligible campaign engagement.\nCampaign A occurred first chronologically, but it falls outside the eligible influence window.\nTherefore, Campaign B is the first eligible engagement and receives 100% of the credit.\nFor the exam, don’t simply choose the campaign with the earliest click. First determine whether the engagement falls within the Opportunity Influence eligibility window, and then apply the attribution model.\nAlso remember these Opportunity Influence requirements:\n- The Opportunity must be Closed Won\n- The person must be a Contact Role\n- Email and SMS click engagements are used\n- Data 360 Unified Profiles aren’t used\n\nAdditional Technical Context: (A) is incorrect because Campaign A falls outside the 30-day pre-creation eligibility lookback window and is completely disqualified from consideration. (C) is incorrect because First Touch awards the earliest touchpoint within the eligible window (Campaign B, 10 days prior) rather than subsequent post-creation touches (Campaign C, 5 days after). (D) is incorrect because First Touch allocates 100% attribution to a single touchpoint rather than distributing fractional shares across touches like an Even Distribution model."
   }
+// ============================================================
+// SECTION: Practice Examn - ADVANCE
+// ============================================================
+  
 
 ];
 
