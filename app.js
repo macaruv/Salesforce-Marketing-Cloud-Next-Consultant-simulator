@@ -2678,7 +2678,7 @@ const QUESTIONS = [
   },
   {
     id: 208,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A marketer links an image and a button in an email to the same Personalization Point. The marketer then adds a new variation and targeting rule to the image. What happens to the button?",
     choices: [
       "Nothing changes",
@@ -3788,7 +3788,7 @@ const QUESTIONS = [
   },
   {
     id: 293,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company uses Business Unit A and Business Unit B and has enabled Common Assets. A marketer in Business Unit A shares a personalized email to Common Assets. The email contains multiple Merge Fields that use data sources from Business Unit A. A marketer in Business Unit B wants to copy the email from Common Assets into their own CMS workspace and use it. What should the consultant explain?",
     choices: [
       "The Merge Fields retain the data source configuration from Business Unit A when copied, so the email can be published without any additional configuration.",
@@ -3905,7 +3905,7 @@ const QUESTIONS = [
   },
   {
     id: 302,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company uses the LoyaltyTier field from a CRM Contact for dynamic content in emails. The administrator changes a customer’s LoyaltyTier in CRM from Gold to Platinum. The following conditions are then confirmed:\n- Ingestion from CRM to the DLO is complete.\n- LoyaltyTier = Platinum is visible on the DMO.\n- Identity Resolution completed successfully after the update.\n- The segment correctly evaluates the customer as Platinum.\n- However, the email dynamic content still evaluates the customer as Gold.\nWhat should the consultant check next?",
     choices: [
       "The CRM connector Data Stream",
@@ -3983,7 +3983,7 @@ const QUESTIONS = [
   },
   {
     id: 308,
-    category: CATEGORIES.SEGMENTATION,
+    category: CATEGORIES.DATA,
     question: "A retail company wants to create a segment of customers who meet the following criteria:\nWithin the past 90 days, the same order item record has:\n- Category = Shoes\nAND\n- Color = Red\nThe marketer uses related attributes and configures:\n- Container 1: Category = Shoes\n- Container 2: Color = Red\nThe two Containers are joined using AND logic.\nDuring testing, customers who purchased “blue shoes” and “a red shirt” as separate items are also included.\nWhat should the marketer change to meet the requirement?",
     choices: [
       "Join the two Containers using OR logic.",
@@ -3996,7 +3996,7 @@ const QUESTIONS = [
   },
   {
     id: 309,
-    category: CATEGORIES.SEGMENTATION,
+    category: CATEGORIES.DATA,
     question: "A company is planning a campaign that updates its target audience every hour based on customer behavior that occurred yesterday. The segment must also include conditions based on related-record history from the past 30 days. The marketer recommends Rapid Publish because it can update the audience every hour. What problem should the consultant point out?",
     choices: [
       "Rapid Publish does not support related attributes.",
@@ -4009,7 +4009,7 @@ const QUESTIONS = [
   },
   {
     id: 310,
-    category: CATEGORIES.SEGMENTATION,
+    category: CATEGORIES.DATA,
     question: "A company publishes a standard segment every 12 hours. For an important campaign, the company also enables Publish Before This Flow Runs so that the latest audience is retrieved immediately before the flow begins. The segment uses Unified Individual attributes generated through Identity Resolution as criteria. A CRM Contact is updated 5 minutes before the flow begins. The segment is successfully published immediately before the flow runs, but the segment still uses the previous attribute value when the flow starts. What is the most likely cause?",
     choices: [
       "Publish Before This Flow Runs cannot be used together with a 12-hour publishing schedule.",
@@ -4022,7 +4022,7 @@ const QUESTIONS = [
   },
   {
     id: 311,
-    category: CATEGORIES.SEGMENTATION,
+    category: CATEGORIES.DATA,
     question: "A retail company wants to target customers who meet all of the following conditions:\n- The Unified Individual’s membership tier is Gold.\n- Related order data contains a purchase within the past 30 days.\n- The customer’s precalculated purchase amount over the past 12 months is at least ¥100,000.\nThe marketer also wants to add a Streaming Insight, created to aggregate website page views, as another condition in the same segment.\nWhat should the consultant explain?",
     choices: [
       "All four can be used as conditions in a standard segment.",
@@ -4087,7 +4087,7 @@ const QUESTIONS = [
   },
   {
     id: 316,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.DATA,
     question: "A company uses only the customer’s name from Data 360 in Marketing Cloud Next emails. The name can be retrieved from Unified Individual, and the company does not plan to use related data such as order or loyalty information. The administrator believes that a Data Graph is always required when using Data 360 values in Marketing Cloud Next and plans to create a new Data Graph containing:\nUnified Individual → Unified Link Individual → Individual\nWhat is the most appropriate way to meet the requirement?",
     choices: [
       "Always create a Data Graph.",
@@ -4100,7 +4100,7 @@ const QUESTIONS = [
   },
   {
     id: 317,
-    category: CATEGORIES.SEGMENTATION,
+    category: CATEGORIES.DATA,
     question: "A company plans to deliver the following three offers within the same campaign:\n- Offer A: VIP customers\n- Offer B: Dormant customers\n- Offer C: General customers\nBecause each customer must receive only one offer, the company configures a Waterfall Segment with the following priority:\n1. VIP → 2. Dormant Customers → 3. General Customers\nCustomer X qualifies for all three source segments when each segment is evaluated independently:\n- VIP → Qualifies\n- Dormant Customers → Qualifies\n- General Customers → Qualifies\nThe marketer explains that the Waterfall Segment assigns Customer X to VIP and also removes Customer X from the original Dormant Customers and General Customers segments.\nWhich statement is most accurate?",
     choices: [
       "Correct. A Waterfall Segment removes records assigned to a higher-priority segment from the original lower-priority segments.",
@@ -4113,7 +4113,7 @@ const QUESTIONS = [
   },
   {
     id: 318,
-    category: CATEGORIES.JOURNEYS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company is building a system to send emergency notifications to customers in areas affected by natural disasters. The requirements are as follows:\n- An external disaster management system calls a Salesforce flow.\n- The affected postal code is passed when the flow is invoked.\n- The affected area changes for each disaster, so the company does not want to create predefined segments for each area.\n- When the flow starts, the current customer data in Data 360 must be evaluated against the postal code provided at runtime.\n- The same mechanism must be reusable with different postal codes.\nThe marketer proposes starting an Audience Flow from the external system and using the postal code provided at runtime to filter an existing segment. What design should the consultant recommend?",
     choices: [
       "Use an Audience Flow and dynamically add the postal code received from the external system to an existing segment at runtime.",
@@ -4126,7 +4126,7 @@ const QUESTIONS = [
   },
   {
     id: 319,
-    category: CATEGORIES.JOURNEYS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company sends an order confirmation email immediately after an order is completed on its ecommerce site. When the ecommerce system calls Salesforce, it can provide customer identification information along with the following values:\n- Order ID\n- Order Date\n- Total Amount\n- Shipping Method\nIn the future, the company plans to ingest order data into Data 360 and use order events for marketing use cases. However, the current requirements are:\n- Send the order confirmation without waiting for order data to be ingested into Data 360.\n- Start processing when the ecommerce system completes the order.\n- Use the order information passed directly from the ecommerce system in the email.\n- There is no need to identify the recipient through a segment.\nWhich design most directly meets the current requirements?",
     choices: [
       "Ingest the order data into Data 360 and start an Automation Event-Triggered Flow when the order event is detected.",
@@ -4139,7 +4139,7 @@ const QUESTIONS = [
   },
   {
     id: 320,
-    category: CATEGORIES.JOURNEYS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company randomly distributes customers across three paths. The configuration is:\n- Path A: 50%\n- Path B: 30%\n- Path C: 20%\n- Mode: Manual\n- Subset testing: Not used\nThe results for the first 10 customers are:\n- Path A: 7 customers\n- Path B: 2 customers\n- Path C: 1 customer\nThe marketer believes this indicates a configuration error. What should the consultant explain?",
     choices: [
       "Path Percentage guarantees an exact distribution of customers, so the configuration is incorrect.",
@@ -4152,7 +4152,7 @@ const QUESTIONS = [
   },
   {
     id: 321,
-    category: CATEGORIES.JOURNEYS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company uses Automated Path Experiment. The configuration is:\n- Path A\n- Path B\n- Path C\n- Performance Metric: Email Link Clicks\n- Test Group: 20%\n- Duration: 48 hours\nAfter 48 hours, even the path with the highest probability of outperforming all other paths has only 92% confidence. What happens next?",
     choices: [
       "The path with the highest number of clicks is selected as the winner.",
@@ -4165,7 +4165,7 @@ const QUESTIONS = [
   },
   {
     id: 322,
-    category: CATEGORIES.JOURNEYS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A marketing team wants to use a Path Experiment to test 20% of its audience and then have a marketer determine the winner after reviewing both the experiment results and external in-store sales data. The campaign runs every week. The marketer proposes the following configuration:\n- Manual\n- Test a subset of your audience: Enabled\n- Run every week\nWhat is the problem with this design?",
     choices: [
       "Manual does not allow external data to be considered when choosing the winner.",
@@ -4178,7 +4178,7 @@ const QUESTIONS = [
   },
   {
     id: 323,
-    category: CATEGORIES.JOURNEYS,
+    category: CATEGORIES.CAMPAIGN,
     question: "A Path Experiment is already active. During the experiment, external sales data clearly shows that Path B is performing better than the other paths. The marketer wants both customers who enter the experiment in the future and customers who are currently waiting to be sent to Path B. What is the most appropriate action?",
     choices: [
       "Stop the flow and create a new version with Path B set to 100%.",
@@ -4191,7 +4191,7 @@ const QUESTIONS = [
   },
   {
     id: 324,
-    category: CATEGORIES.ACTIVATION,
+    category: CATEGORIES.DATA,
     question: "A company has multiple email addresses associated with customers unified through Identity Resolution. For Activation, the company wants to select email addresses using the following priority:\n1. CRM\n2. Marketing Cloud Engagement\n3. Other sources\nThe administrator configures the Source Priority Order accordingly. For the target Unified Individual, multiple Contact Point Email records from CRM, Marketing Cloud Engagement, and S3 are correctly associated. The Data Graph used for Activation contains:\nUnified Individual → Unified Link Individual → Individual → Contact Point Email\nIdentity Resolution and the Data Graph have both refreshed successfully. However, when Activation runs, the CRM email address is not consistently prioritized. What should the consultant check first?",
     choices: [
       "Whether the Reconciliation Rule for Email on Unified Individual is configured as Source Priority.",
@@ -4204,7 +4204,7 @@ const QUESTIONS = [
   },
   {
     id: 325,
-    category: CATEGORIES.ACTIVATION,
+    category: CATEGORIES.DATA,
     question: "A company wants to use only CRM Business Email addresses as the destination email addresses for Activation. Some customers do not have a CRM Business Email but have email addresses from other sources or with other Contact Point Types. The company’s requirement is:\n- If no email address meets the specified criteria, do not fall back to another email address. It is acceptable to exclude that customer from the Activation.\nWhich Source Priority Order configuration best meets this requirement?",
     choices: [
       "Set CRM Business Email as the highest priority and then configure Any as the fallback.",
@@ -4217,7 +4217,7 @@ const QUESTIONS = [
   },
   {
     id: 326,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A marketing team changes both an image and a CTA button in the same email based on customer interests. Currently, the image and button are linked to the same Personalization Point. The requirements have changed:\n- The team wants to retain the existing targeting rules.\n- Going forward, the rules for the image and button must be editable independently.\nWhat is the most appropriate action?",
     choices: [
       "Unlink the Personalization Point.",
@@ -4230,7 +4230,7 @@ const QUESTIONS = [
   },
   {
     id: 327,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "An email contains the following three variations based on customer attributes:\n- Variation A: Loyalty Tier = Gold\n- Variation B: Purchased in Last 30 Days = True\n- Variation C: Region = Tokyo\nA customer meets all three conditions. The marketer believes that all three matching content variations will be displayed. What actually happens?",
     choices: [
       "All three variations are displayed.",
@@ -4243,7 +4243,7 @@ const QUESTIONS = [
   },
   {
     id: 328,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.AI,
     question: "A company wants to display personalized product recommendations in emails using a Salesforce Personalization Recommender. The Recommender has been successfully trained. The email also uses a Data Graph to personalize customer data. However, when the marketer tries to use the existing Recommender in the email, it does not work as expected. What should the consultant check first?",
     choices: [
       "Whether the Recommender was trained using the same Data Graph that is used by the email.",
@@ -4256,7 +4256,7 @@ const QUESTIONS = [
   },
   {
     id: 329,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.DATA,
     question: "An order confirmation email needs to display the following information retrieved from an external API:\n- Order Number\n- Total Amount\n- Shipping Information\n- Multiple Order Items\nThe number of order items varies by customer.\nThe marketer wants to pass this structured order data directly from a Flow to the email.\nWhich data source is most appropriate?",
     choices: [
       "Unified Individual",
@@ -4269,7 +4269,7 @@ const QUESTIONS = [
   },
   {
     id: 330,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company sends an email when an order completion event occurs. The email uses an Event Data Source to display information such as the order number and purchase amount. After the email is published, the development team asks to switch the email to a different order event. What is the most appropriate approach?",
     choices: [
       "Directly replace the Event Data Source in the published email.",
@@ -4282,7 +4282,7 @@ const QUESTIONS = [
   },
   {
     id: 331,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company is creating product promotion content in Marketing Cloud Next. The personalization requirements are:\n- Display a single attribute value, such as the customer’s name or membership tier, within the content.\n- Change the entire hero banner based on the customer’s membership tier.\n- Display multiple products associated with the customer using the same repeating layout.\n- If conditional processing becomes difficult to implement with standard components, use template-based personalization supported by Marketing Cloud Next.\nWhich combination of features should the consultant recommend?",
     choices: [
       "Use Merge Fields for attribute values, Dynamic Content for changing the banner, Repeater for displaying multiple products, and Handlebars for template-based processing when needed.",
@@ -4295,7 +4295,7 @@ const QUESTIONS = [
   },
   {
     id: 332,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.CAMPAIGN,
     question: "A company wants to reuse an existing email template for another campaign. The current email uses attributes from its configured data source in multiple Merge Fields. The new campaign will use the same design but needs to retrieve customer attributes from a different data source. The marketer assumes that changing the current data source will automatically remap the existing Merge Fields to fields with the same names in the new data source. What should the consultant explain?",
     choices: [
       "Changing the data source automatically remaps existing Merge Fields to attributes with the same API reference names.",
@@ -4308,7 +4308,7 @@ const QUESTIONS = [
   },
   {
     id: 333,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.PLATFORM,
     question: "A team wants to delete a Marketing Workspace after a campaign has ended. The Workspace is not the default Marketing Workspace, but it currently has:\n- Published content\n- Content-sharing relationships with another Workspace\nWhat must the team do before deleting the Marketing Workspace?",
     choices: [
       "Unpublish all content and remove the Workspace from both source and target sharing relationships.",
@@ -4321,7 +4321,7 @@ const QUESTIONS = [
   },
   {
     id: 334,
-    category: CATEGORIES.CONTENT,
+    category: CATEGORIES.PLATFORM,
     question: "A company is ending a landing page campaign. After the campaign ends, customers who visit the existing URL should automatically be redirected to a new campaign page. The marketer plans to unpublish the landing page first and then configure a URL Redirect. What is the most appropriate approach?",
     choices: [
       "The proposed sequence is correct.",
@@ -4334,7 +4334,7 @@ const QUESTIONS = [
   },
   {
     id: 335,
-    category: CATEGORIES.EDITIONS_FEATURES,
+    category: CATEGORIES.PLATFORM,
     question: "A company uses Marketing Cloud Next Growth Edition. The marketing team has the following four requirements:\n1. Predict the time when each customer is most likely to open an email.\n2. Exclude false clicks caused by bots or security scans from analytics.\n3. Predict the optimal messaging frequency for each customer to avoid message fatigue.\n4. Use Agentforce to assist with campaign creation.\nWhich combination can be supported with the current Growth Edition without purchasing additional licenses or changing editions?",
     choices: [
       "1, 2, and 4",
@@ -4347,7 +4347,7 @@ const QUESTIONS = [
   },
   {
     id: 336,
-    category: CATEGORIES.AI_AGENTFORCE,
+    category: CATEGORIES.AI,
     question: "A company used Campaign Creation Agent to create a campaign. Agentforce created the audience, content, and flow, and marketers later adjusted these assets for ongoing use. After some time, the marketer decides that the campaign brief is no longer needed and wants to delete it. However, the company still wants to continue using the segments and content that have already been created. What is the most appropriate explanation of the impact of deleting the brief?",
     choices: [
       "The segments and content created by Agentforce are automatically deleted together with the brief.",
@@ -4360,7 +4360,7 @@ const QUESTIONS = [
   },
   {
     id: 337,
-    category: CATEGORIES.AI_AGENTFORCE,
+    category: CATEGORIES.AI,
     question: "A company has implemented Campaign Creation Agent. The Marketing Cloud Next administrator confirms that Agentforce has been configured correctly, but marketer A does not see the Agentforce icon at the top of the screen. Marketer B in the same org can see the icon. Both users work in the same Business Unit and Marketing Workspace. What should the consultant check first?",
     choices: [
       "Whether marketer A has the Marketing Cloud Manager permission set and is registered as a member of the Business Unit.",
@@ -4373,7 +4373,7 @@ const QUESTIONS = [
   },
   {
     id: 338,
-    category: CATEGORIES.AI_AGENTFORCE,
+    category: CATEGORIES.AI,
     question: "A company sends a benefits email to customers when their loyalty tier changes to Gold. Currently, the email contains a link to a product page, but the company wants to change the experience so that:\n- An email is sent when the customer changes to Gold.\n- Customers can reply directly to the email with questions about products or benefits.\n- After the reply, the conversation continues in a personalized way using purchase and return history.\n- The conversation can lead to next actions such as product recommendations or reservations.\nThe marketer believes that Agentforce should handle everything starting with the initial email.\nWhich design is most appropriate for Conversational Marketing?",
     choices: [
       "Have Agentforce continuously monitor loyalty tier changes and send the email directly when it identifies a customer who becomes Gold.",
@@ -4386,7 +4386,7 @@ const QUESTIONS = [
   },
   {
     id: 339,
-    category: CATEGORIES.AI_AGENTFORCE,
+    category: CATEGORIES.AI,
     question: "A company uses Agentforce to answer customer questions about its products. The legal and brand teams have the following requirements:\n1. Customer phone numbers and addresses must not be passed directly to an external LLM.\n2. AI responses should be grounded in internal product information and FAQs to reduce the risk of generating fabricated product information.\n3. Inappropriate or harmful generated content must be detected and blocked.\n4. The LLM provider must not retain prompts or responses.\nWhich combination of Einstein Trust Layer features correctly addresses these requirements?",
     choices: [
       "1 = Dynamic Grounding / 2 = Data Masking / 3 = Zero Data Retention / 4 = Toxicity Scorer",
@@ -4399,7 +4399,7 @@ const QUESTIONS = [
   },
   {
     id: 340,
-    category: CATEGORIES.AI_AGENTFORCE,
+    category: CATEGORIES.AI,
     question: "A company uses Agentforce for conversational marketing through email. A customer replies to an email with the following question:\n“I am past the return deadline for a product I purchased last month. Can I still receive a refund? I was given a special refund in a similar situation before.”\nAgentforce can retrieve the following information about the customer from Data 360:\n- Purchase history\n- Previous return history\n- A previous exception in which a refund was issued\nThe company’s standard policy does not allow refunds after the return deadline, and no rule has been defined that allows Agentforce to independently approve exceptions.\nWhat is the most appropriate action?",
     choices: [
       "Because the previous exception exists in Data 360, use Dynamic Grounding to issue the same refund this time.",
@@ -4646,7 +4646,7 @@ function renderDashboard() {
 
         <div class="stat-row">
           <div class="stat-box">
-            <div class="stat-value">${EXAM_CONFIG.totalQuestions}</div>
+            <div class="stat-value">${totalQuestions}</div>
             <div class="stat-label">Questions</div>
           </div>
 
@@ -5063,18 +5063,33 @@ function updateScoreMatrix() {
 
 function updateTabProgress() {
   // Category tabs (1-6)
-  for (let i = 1; i <= 5; i++) {
-    const cat = TAB_CATEGORIES[i];
-    const questions = state.questions.filter(q => q.category === cat);
-    const answered = questions.filter(q => state.submitted[q.id]).length;
-    const el = $(`#progress-${i}`);
-    if (el) el.textContent = `${answered} / ${questions.length} Answered`;
-  }
+  // Category tabs (1-6)
+for (let i = 1; i <= 6; i++) {
+  const cat = TAB_CATEGORIES[i];
+  const questions = state.questions.filter(
+    q => q.category === cat
+  );
+  const answered = questions.filter(
+    q => state.submitted[q.id]
+  ).length;
 
-  // Full simulator tab
-  const allAnswered = Object.keys(state.submitted).length;
-  const el6 = $(`#progress-6`);
-  if (el6) el6.textContent = `${allAnswered} / ${state.questions.length} Answered`;
+  const el = $(`#progress-${i}`);
+  if (el) {
+    el.textContent = `${answered} / ${questions.length} Answered`;
+  }
+}
+
+// Full Exam tab (7)
+const allAnswered = state.questions.filter(
+  q => state.submitted[q.id]
+).length;
+
+const fullExamProgress = $("#progress-7");
+
+if (fullExamProgress) {
+  fullExamProgress.textContent =
+    `${allAnswered} / ${state.questions.length} Answered`;
+}
 
   // Update dashboard category progress bars
   const topicKeys = [
@@ -5126,7 +5141,7 @@ function toggleMode(isExam) {
     startTimer();
 
     // Switch to full exam tab
-    setActiveTab(6);
+    setActiveTab(7);
   } else {
     // Reset state for study mode
     state.answers = {};
