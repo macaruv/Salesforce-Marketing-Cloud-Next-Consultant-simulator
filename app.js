@@ -1297,7 +1297,7 @@ const QUESTIONS = [
       "Data Cloud Data Streams setup."
     ],
     correctAnswerText: "Business Unit Settings page.",
-    explanation: "The transcript explicitly notes that Common Assets can be enabled from the Business Unit Settings page in Setup, making marked assets discoverable across all business units."
+    explanation: "Common Assets can be enabled from the Business Unit Settings page in Setup, making marked assets discoverable across all business units."
   },
   {
     id: 98,

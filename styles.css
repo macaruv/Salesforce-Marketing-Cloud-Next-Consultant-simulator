@@ -853,6 +853,7 @@ body {
   font-size: .92rem;
   line-height: 1.7;
   color: var(--text-primary);
+  white-space: pre-line;
 }
 
 .multi-badge {
@@ -1068,6 +1069,7 @@ body {
   border: 1px solid #FFF59D;
   border-radius: var(--radius-md);
   display: none;
+  white-space: pre-line;
 }
 
 .explanation-panel.visible {
